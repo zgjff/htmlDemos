@@ -1,0 +1,15 @@
+<div class='container'>
+  <ul>
+    <li *ngFor='let pair of engines; index as idx'>
+      <button
+        (click)='resetSearchEnginesForIndex(idx)'
+        [class.isSelected]='pair[1]'
+        class='engineButton'
+        type='button'
+      >
+        {{ pair[0].title }}
+      </button>
+    </li>
+  </ul>
+  <!--  <button class='searchButton' type='submit'>搜索</button>-->
+</div>
