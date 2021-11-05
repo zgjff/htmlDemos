@@ -7,6 +7,10 @@ export interface SearchEngine {
    */
   title: string
   /**
+   * 描述
+   */
+  desc: string
+  /**
    * 引擎url
    */
   url: string

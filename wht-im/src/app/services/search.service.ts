@@ -30,13 +30,13 @@ export class SearchService {
   constructor() {
   	this.engines = new ReplaySubject<[engine: SearchEngine, isSelected: Boolean][]>(1)
   	this.defaultEngines = [
-  		{title: '百度', url: ''},
-  		{title: '谷歌', url: ''},
-  		{title: '必应', url: ''},
-  		{title: '图片', url: ''},
-  		{title: '百科', url: ''},
-  		{title: '地图', url: ''},
-  		{title: '学术', url: ''}
+  		{title: '百度', desc: '', url: ''},
+  		{title: '谷歌', desc: '', url: ''},
+  		{title: '必应', desc: '', url: ''},
+  		{title: '图片', desc: '', url: ''},
+  		{title: '百科', desc: '', url: ''},
+  		{title: '地图', desc: '', url: ''},
+  		{title: '学术', desc: '', url: ''}
   	]
   }
 

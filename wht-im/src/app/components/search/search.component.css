@@ -1,37 +1,23 @@
 .container {
-  /*background-color: #6c615f;*/
+  column-gap: 50px;
+  display: grid;
+  grid-template-areas: 'engines .'
+                        'input searchButton';
+  grid-template-columns: 1fr 130px;
+  grid-template-rows: 1fr 50px;
   height: 100%;
+  row-gap: 8px;
   width: 100%;
-}
-
-.searchButton {
-  background-color: #444;
-  border-width: 0;
-  color: white;
-  font-size: 1rem;
-  height: 46px;
-  max-width: 130px;
-  width: 26%;
-}
-
-.searchButton:hover {
-  background-color: black;
 }
 
 ul {
   border: 0 solid #ddd;
   border-bottom-width: thin;
   display: flex;
-  height: 46px;
-  justify-content: center;
+  grid-area: engines;
+  justify-content: space-between;
   list-style-type: none;
-
   padding: 0;
-  width: 74%;
-}
-
-li {
-  flex-grow: 1;
 }
 
 .engineButton {
@@ -41,10 +27,7 @@ li {
   font-family: inherit;
   font-size: 0.9rem;
   height: 100%;
-  line-height: 46px;
-
   text-align: center;
-  width: 60%;
 }
 
 .engineButton:hover {
@@ -56,4 +39,25 @@ li {
 .engineButton.isSelected {
   border-bottom-width: 2px;
   color: #666;
+}
+
+input {
+  background-color: #ededed;
+  border: 0;
+  font-size: 1rem;
+  grid-area: input;
+  outline: none;
+  padding: 0 10px;
+}
+
+.searchButton {
+  background-color: #444;
+  border-width: 0;
+  color: white;
+  font-size: 1rem;
+  grid-area: searchButton;
+}
+
+.searchButton:hover {
+  background-color: black;
 }

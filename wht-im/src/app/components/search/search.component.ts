@@ -18,6 +18,11 @@ export class SearchComponent implements OnInit {
   engines: [SearchEngine, Boolean][] = []
 
   /**
+   * 当前选中的引擎
+   */
+  selectedEngine?: SearchEngine
+
+  /**
    * 初始化
    * @param engineService: 搜索引擎服务
    */
@@ -36,7 +41,10 @@ export class SearchComponent implements OnInit {
    * 引擎服务`rx`逻辑处理
    */
   bind() {
-  	this.engineService.engines.subscribe(engines => this.engines = engines)
+  	this.engineService.engines.subscribe(engines => {
+  		this.engines = engines
+  		this.selectedEngine = engines.filter(value => value[1])[0][0]
+  	})
   }
 
   /**
