@@ -1,63 +1,36 @@
+:host {
+	display: block;
+	height: 360px;
+	margin: 50px 100px 0 100px;
+}
+
 .container {
-  column-gap: 50px;
-  display: grid;
-  grid-template-areas: 'engines .'
-                        'input searchButton';
-  grid-template-columns: 1fr 130px;
-  grid-template-rows: 1fr 50px;
-  height: 100%;
-  row-gap: 8px;
-  width: 100%;
+	align-items: flex-start;
+	background-color: white;
+	box-sizing: border-box;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	padding: 55px 90px 70px 90px;
+	width: 100%;
 }
 
-ul {
-  border: 0 solid #ddd;
-  border-bottom-width: thin;
-  display: flex;
-  grid-area: engines;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
+button {
+	background-color: white;
+	border-width: 0;
+	color: black;
+	font-weight: bold;
 }
 
-.engineButton {
-  background-color: white;
-  border: 0 solid black;
-  color: #999;
-  font-family: inherit;
-  font-size: 0.9rem;
-  height: 100%;
-  text-align: center;
+button.title {
+	font-size: 1.6rem;
 }
 
-.engineButton:hover {
-  border-bottom-width: 2px;
-  color: #666;
-  cursor: pointer;
+button.slider {
+	font-size: 1.4rem;
 }
 
-.engineButton.isSelected {
-  border-bottom-width: 2px;
-  color: #666;
-}
-
-input {
-  background-color: #ededed;
-  border: 0;
-  font-size: 1rem;
-  grid-area: input;
-  outline: none;
-  padding: 0 10px;
-}
-
-.searchButton {
-  background-color: #444;
-  border-width: 0;
-  color: white;
-  font-size: 1rem;
-  grid-area: searchButton;
-}
-
-.searchButton:hover {
-  background-color: black;
+app-search-engine {
+	align-self: flex-end;
+	flex-grow: 0.3;
 }

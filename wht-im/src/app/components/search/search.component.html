@@ -1,16 +1,5 @@
 <div class='container'>
-  <ul>
-    <li *ngFor='let pair of engines; index as idx'>
-      <button
-        (click)='resetSearchEnginesForIndex(idx)'
-        [class.isSelected]='pair[1]'
-        class='engineButton'
-        type='button'
-      >
-        {{ pair[0].title }}
-      </button>
-    </li>
-  </ul>
-  <input 123 placeholder='{{selectedEngine ? {{selectedEngine.title}}' type='search'>
-  <button class='searchButton' type='submit'>搜索</button>
+	<button class='title'>W.</button>
+	<app-search-engine></app-search-engine>
+	<button class='slider'>三</button>
 </div>

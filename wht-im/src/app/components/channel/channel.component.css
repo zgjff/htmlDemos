@@ -1,0 +1,11 @@
+:host {
+	background-color: orange;
+	display: block;
+	height: 360px;
+	margin: 0 100px;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+}

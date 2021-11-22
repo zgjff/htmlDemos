@@ -1,104 +1,61 @@
 {
   "root": true,
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "parser": "@typescript-eslint/parser",
   "ignorePatterns": [
-    "projects/**/*"
+	"projects/**/*"
   ],
   "overrides": [
-    {
-      "files": [
-        "*.ts"
-      ],
-      "parserOptions": {
-        "project": [
-          "tsconfig.json"
-        ],
-        "createDefaultProgram": true
-      },
-      "extends": [
-        "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
-      ],
-      "rules": {
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "app",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
-          }
-        ],
-        "indent": [
-          "error",
-          "tab"
-        ],
-        "quotes": [
-          "error",
-          "single"
-        ],
-        "semi": [
-          "error",
-          "never"
-        ],
-        "object-curly-spacing": [
-          "error",
-          "never",
-          {
-            "arraysInObjects": false,
-            "objectsInObjects": false
-          }
-        ],
-        "comma-dangle": [
-          "error",
-          "never"
-        ],
-        "no-tabs": [
-          "error",
-          {
-            "allowIndentationTabs": true
-          }
-        ],
-        "lines-between-class-members": [
-          "error",
-          "always"
-        ],
-        "no-unused-vars": [
-          "error",
-          {
-            "argsIgnorePattern": "[sS]ervice"
-          }
-        ],
-        "no-duplicate-case": "error",
-        "eol-last": [
-          "error",
-          "always"
-        ],
-        "space-before-function-paren": [
-          "error",
-          "never"
-        ]
-      }
-    },
-    {
-      "files": [
-        "*.html"
-      ],
-      "extends": [
-        "plugin:@angular-eslint/template/recommended"
-      ],
-      "rules": {}
-    }
+	{
+	  "files": [
+		"*.ts"
+	  ],
+	  "parserOptions": {
+		"project": [
+		  "tsconfig.json"
+		],
+		"createDefaultProgram": true
+	  },
+	  "extends": [
+		"plugin:@angular-eslint/recommended",
+		"plugin:@angular-eslint/template/process-inline-templates",
+		"prettier"
+	  ],
+	  "rules": {
+		"@angular-eslint/directive-selector": [
+		  "error",
+		  {
+			"type": "attribute",
+			"prefix": "app",
+			"style": "camelCase"
+		  }
+		],
+		"@angular-eslint/component-selector": [
+		  "error",
+		  {
+			"type": "element",
+			"prefix": "app",
+			"style": "kebab-case"
+		  }
+		],
+		"comma-dangle": [
+		  "error",
+		  "never"
+		],
+		"no-tabs": [
+		  "error",
+		  {
+			"allowIndentationTabs": true
+		  }
+		]
+	  }
+	},
+	{
+	  "files": [
+		"*.html"
+	  ],
+	  "extends": [
+		"plugin:@angular-eslint/template/recommended"
+	  ],
+	  "rules": {}
+	}
   ]
 }

@@ -1,0 +1,15 @@
+<div class="container">
+	<ul>
+		<li *ngFor="let obj of engines; index as idx; trackBy: trackByFn">
+			<button
+				[class.isSelected]="obj[1]"
+				(click)="resetSearchEnginesForIndex(idx)"
+				type="button"
+			>
+				{{ obj[0].title }}
+			</button>
+		</li>
+	</ul>
+	<input [(ngModel)]="searchContent" placeholder="{{ selectedEngine?.desc }}" type="search" />
+	<button class="search" (click)="startSearch()" type="button">搜索</button>
+</div>

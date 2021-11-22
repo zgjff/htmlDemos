@@ -1,0 +1,63 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr 130px;
+	grid-template-rows: 1fr 50px;
+	column-gap: 50px;
+	row-gap: 8px;
+	grid-template-areas:
+		'engines .'
+		'input searchButton';
+}
+
+ul {
+	grid-area: engines;
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+}
+
+li > button {
+	color: #999;
+	font-family: inherit;
+	font-size: 1rem;
+	height: 100%;
+	text-align: center;
+	border: 0;
+	padding: 10px 6px;
+	background-color: white;
+	border-bottom: 2px solid white;
+}
+
+li > button.isSelected {
+	color: #666;
+	border-block-color: #666;
+}
+
+li > button:hover {
+	color: #666;
+	border-block-color: #666;
+}
+
+button.search {
+	grid-area: searchButton;
+	background-color: #444;
+	border-width: 0;
+	color: white;
+	font-size: 1rem;
+	grid-area: searchButton;
+}
+
+button.search:hover {
+	background-color: black;
+}
+
+input {
+	grid-area: input;
+	border-width: 0;
+	background-color: #ededed;
+	font-size: 1rem;
+	padding: 0 10px;
+	outline: none;
+}

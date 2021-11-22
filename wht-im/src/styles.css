@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #ededed;
-  font-size: 62.5%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	background: #ededed;
+	color: #666;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 62.5%;
 }
 
 button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
