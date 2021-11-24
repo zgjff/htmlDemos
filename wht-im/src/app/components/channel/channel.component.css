@@ -1,11 +1,79 @@
 :host {
-	background-color: orange;
+	background-color: #f7f7f7;
 	display: block;
-	height: 360px;
 	margin: 0 100px;
 }
 
 .container {
 	height: 100%;
+	padding: 40px 0 50px;
 	width: 100%;
+}
+
+/******************频道类型********************/
+ul.channelStyle {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+ul.channelStyle > li {
+	margin: 0 20px;
+}
+
+button.channelStyle {
+	font-size: 1.0rem;
+	padding: 4px 24px;
+}
+
+/******************推荐频道********************/
+ul.recommend {
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	grid-template-rows: repeat(8, auto);
+	list-style-type: none;
+	margin: 20px 120px 0;
+}
+
+ul.recommend > li {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	margin: 4px 0;
+}
+
+a {
+	margin: 5px auto;
+}
+
+button.recommend {
+	font-size: 1.0rem;
+	padding: 2px 16px;
+	width: max-content;
+}
+
+.recommendHeader {
+	color: #999;
+	font-family: inherit;
+	font-size: 1.0rem;
+}
+
+button.recommendHeader:hover {
+	background-color: #f7f7f7;
+	cursor: text;
+}
+
+/******************公共********************/
+button {
+	background-color: #f7f7f7;
+	border: 0;
+	color: #666;
+	font-family: inherit;
+	line-height: 1.8;
+}
+
+button:hover,
+.isSelected {
+	background-color: #ededed;
 }

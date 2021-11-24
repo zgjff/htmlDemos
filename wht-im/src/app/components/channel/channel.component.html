@@ -1,1 +1,32 @@
-<div class='container'></div>
+<div class='container'>
+	<ul class='channelStyle'>
+		<li *ngFor='let item of channelTitles; index as i' [class.isSelected]='true'>
+			<button
+				(click)='onSelectedChannelStyle(item)'
+				[class.isSelected]='showChannelStyle?.title === item'
+				class='channelStyle'
+				type='button'
+			>
+				{{ item }}
+			</button>
+		</li>
+	</ul>
+	<ul class='recommend'>
+		<li *ngFor='let item of channels; trackBy: channelTrackByFn'>
+			<div *ngIf='item[1] === undefined; then thenBlock else elseBlock'></div>
+			<ng-template #thenBlock>
+				<div class='recommendHeader'>{{ item[0] }}</div>
+			</ng-template>
+			<ng-template #elseBlock>
+				<a href='{{item[1]}}' target='_blank'>
+					<button
+						class='recommend'
+						type='button'
+					>
+						{{ item[0] }}
+					</button>
+				</a>
+			</ng-template>
+		</li>
+	</ul>
+</div>

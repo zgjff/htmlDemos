@@ -10,6 +10,11 @@
 			</button>
 		</li>
 	</ul>
-	<input [(ngModel)]="searchContent" placeholder="{{ selectedEngine?.desc }}" type="search" />
+	<input
+		[(ngModel)]="searchContent"
+		placeholder="{{ selectedEngine?.desc }}"
+		(keyup.enter)="startSearch()"
+		type="search"
+	/>
 	<button class="search" (click)="startSearch()" type="button">搜索</button>
 </div>

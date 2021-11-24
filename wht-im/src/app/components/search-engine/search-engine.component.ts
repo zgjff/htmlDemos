@@ -36,7 +36,6 @@ export class SearchEngineComponent implements OnInit {
 
 	bind() {
 		this.engineService.engines.subscribe((engines) => {
-			console.log('asdf')
 			this.engines = engines
 			if (engines.length == 0) {
 				this.selectedEngine = undefined
