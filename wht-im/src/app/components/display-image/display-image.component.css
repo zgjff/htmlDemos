@@ -1,0 +1,14 @@
+:host {
+	box-sizing: border-box;
+	display: grid;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 330px;
+	margin: 0 100px;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}

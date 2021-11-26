@@ -1,0 +1,28 @@
+:host {
+	align-items: center;
+	background-color: white;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	height: 330px;
+	justify-content: center;
+	margin: 0 100px 50px;
+}
+
+p {
+	color: #666;
+
+}
+
+p, a {
+	font-size: 0.9rem;
+	margin: 3px auto;
+}
+
+a {
+	text-decoration: unset;
+}
+
+a:link, a:visited {
+	color: #666;
+}
