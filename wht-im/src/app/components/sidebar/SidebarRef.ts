@@ -8,18 +8,10 @@ export class SidebarRef {
 	}
 
 	/**
-	 * 隐藏侧边栏
+	 * 隐藏overlay
 	 */
 	hide() {
 		this.overlay.dispose()
-	}
-
-	/**
-	 * 是否已经显示
-	 */
-	isVisible(): Boolean {
-		const element = this.overlay && this.overlay.overlayElement
-		return !element.hidden
 	}
 
 	/**

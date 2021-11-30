@@ -1,6 +1,32 @@
 :host {
-	background-color: white;
 	display: block;
 	height: 100vh;
 	width: 500px;
+}
+
+.container {
+	background-color: white;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 60px 80px;
+	width: 100%;
+}
+
+button {
+	background-color: white;
+	border: 0;
+	font-size: 2rem;
+}
+
+ul {
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+	list-style-type: none;
+}
+
+
+ul:hover {
+	cursor: pointer;
 }

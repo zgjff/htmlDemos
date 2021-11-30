@@ -1,0 +1,7 @@
+<div
+	(@sidebarAnimation.done)='onAnimationFinished($event)'
+	[@sidebarAnimation]='animationState'
+	class='container'
+>
+	<button (click)='hide()' type='button'>x</button>
+</div>
