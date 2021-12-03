@@ -1,0 +1,74 @@
+footer {
+	background-color: #0d47a1;
+	color: white;
+	padding: 48px;
+	position: relative;
+	z-index: 0;
+}
+
+footer::after {
+	background: url('../../../assets/images/angular_whiteTransparent_withMargin.png') top 0 left 0 repeat, url('../../../assets/images/angular_whiteTransparent_withMargin.png') top 80px left 160px repeat;
+	background-size: 320px auto;
+	bottom: 0;
+	content: '';
+	left: 0;
+	opacity: 0.05;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+p, a {
+	color: white;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer .container {
+	align-items: flex-start;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 40px;
+}
+
+footer .container .column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 24px;
+	vertical-align: top;
+}
+
+ul {
+	list-style-type: none;
+	margin: 12px auto 0;
+	padding: 0;
+}
+
+h3, li {
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+h3 {
+	margin: 0;
+}
+
+li {
+	padding: 4px 0;
+	text-align: left;
+}
+

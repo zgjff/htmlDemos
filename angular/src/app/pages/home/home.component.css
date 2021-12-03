@@ -1,0 +1,70 @@
+header {
+	margin: 0;
+}
+
+.background {
+	background: linear-gradient(145deg, rgb(13, 71, 161), rgb(25, 118, 210));
+	box-sizing: border-box;
+	color: white;
+	height: 80vh;
+	margin: 0;
+	max-height: 560px;
+	min-height: 480px;
+	overflow: hidden;
+	padding: 48px 48px 32px;
+	position: absolute;
+	transform: skewY(8deg);
+	transform-origin: 100%;
+	width: 100%;
+}
+
+section#intro {
+	align-items: center;
+	display: flex;
+	height: 480px;
+	margin: 0 auto -32px;
+	padding: 48px 0 0;
+	position: relative;
+	width: 900px;
+}
+
+section#intro .hero-logo {
+	background-image: url('../../../assets/images/angular.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex: 1;
+	height: 400px;
+	margin-bottom: 8px;
+}
+
+section#intro .container {
+	flex: 1;
+	margin: -7% auto 0;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+section#intro .container > p {
+	color: white;
+	font-size: 4rem;
+	font-weight: 500;
+	margin: 32px 0;
+}
+
+section#intro .container > button {
+	background-color: #444;
+	border: none;
+	border-radius: 48px;
+	box-shadow: 0 2px 5px #00000042;
+	box-sizing: border-box;
+	color: #7fc9ff;
+	cursor: pointer;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 4rem;
+	margin-bottom: 4px;
+	overflow: hidden;
+	padding: 2px 34px 0;
+}
+

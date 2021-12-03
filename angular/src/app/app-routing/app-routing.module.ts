@@ -1,0 +1,20 @@
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
+import { PagesModule } from '../pages/pages.module'
+import { HomeComponent } from '../pages/home/home.component'
+import { FeaturesComponent } from '../pages/features/features.component'
+
+const routes: Routes = [
+	{ path: '', component: HomeComponent },
+	{ path: 'features', component: FeaturesComponent }
+]
+
+@NgModule({
+	imports: [PagesModule, RouterModule.forRoot(routes)],
+	exports: [RouterModule]
+})
+
+/**
+ * 路由模块
+ */
+export class AppRoutingModule {}
