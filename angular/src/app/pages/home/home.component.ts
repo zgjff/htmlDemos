@@ -5,6 +5,10 @@ import { Component } from '@angular/core'
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.css']
 })
+
+/**
+ * 首页
+ */
 export class HomeComponent {
 	constructor() {}
 }

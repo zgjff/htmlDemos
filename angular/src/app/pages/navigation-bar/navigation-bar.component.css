@@ -1,8 +1,127 @@
 :host {
+	align-items: center;
 	background-color: transparent;
 	box-shadow: none;
+	color: white;
+	display: flex;
 	position: absolute;
 	transition: background-color .2s linear;
 	width: 100%;
 	z-index: 10;
+}
+
+button {
+	align-self: stretch;
+	background-color: transparent;
+	border: none;
+	margin: 0 8px 0 0;
+	min-width: 64px;
+	outline: none;
+	text-align: center;
+	transition: margin .4s ease-in-out;
+}
+
+button.hidden {
+	margin: 0 16px 0 -64px;
+}
+
+a.naviLogo {
+	margin: 0 16px 0 0;
+	padding: 8px 0;
+}
+
+img.naviLogo {
+	height: 40px;
+	width: 150px;
+}
+
+a {
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	align-items: center;
+	display: flex;
+}
+
+li > a {
+	background-color: transparent;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin: 0 4px;
+	padding: 8px;
+}
+
+li > a:hover {
+	background-color: rgba(255, 255, 255, .15);
+}
+
+li > a.isSelected {
+	border-radius: 1px;
+	box-shadow: 0 0 1px 2px #fffc;
+}
+
+.searchContainer {
+	align-items: center;
+	border-right: 1px solid white;
+	display: flex;
+	flex-grow: 1;
+	height: 40px;
+	justify-content: flex-end;
+	padding-right: 12px;
+}
+
+input {
+	background-color: white;
+	border: none;
+	border-radius: 100px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	height: 32px;
+	line-height: 3.2rem;
+	margin-left: 8px;
+	max-width: 240px;
+	outline: none;
+	padding: 5px 16px;
+	transition: width .4s ease-in-out;
+	width: 180px;
+}
+
+input:focus {
+	width: 240px;
+}
+
+.svgContainer {
+	box-sizing: border-box;
+	display: flex;
+	padding: 0 16px 0 0;
+}
+
+.svgButton {
+	align-items: center;
+	display: flex;
+	height: 40px;
+	justify-content: center;
+	text-align: center;
+	width: 40px;
+}
+
+.svgBox {
+	background-repeat: no-repeat;
+	color: white;
+	display: inline-block;
+	fill: white;
+	height: 24px;
+	line-height: 24px;
+	width: 24px;
 }

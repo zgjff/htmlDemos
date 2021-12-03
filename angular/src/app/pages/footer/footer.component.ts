@@ -6,6 +6,10 @@ import { FooterData, FooterModel } from './footerModel'
 	templateUrl: './footer.component.html',
 	styleUrls: ['./footer.component.css']
 })
+
+/**
+ * 页脚
+ */
 export class FooterComponent implements OnInit {
 	list: FooterModel[] = []
 

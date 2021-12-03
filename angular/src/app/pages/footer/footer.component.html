@@ -3,8 +3,10 @@
 		<div *ngFor='let column of list' class='column'>
 			<h3>{{column.title}}</h3>
 			<ul>
-				<li *ngFor='let item of column.subs'>
-					<a href='{{item.url}}'>{{item.title}}</a>
+				<li *ngFor='let link of column.subs'>
+					<a href='{{link.url}}' target='{{link.target}}'>
+						{{link.title}}
+					</a>
 				</li>
 			</ul>
 		</div>
