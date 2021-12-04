@@ -4,7 +4,61 @@
 		<div class='hero-logo'></div>
 		<div class='container'>
 			<p>现代 Web 开发平台</p>
-			<a href=''>快速上手</a>
+			<a routerLink='/docs'>快速上手</a>
 		</div>
 	</section>
 </header>
+<article>
+	<div *ngFor='let desc of angularDesc; last as isLast' [class.hiddenDivider]='desc.hiddenDivider' class='rows'>
+		<div *ngIf='isLast; then renderCard else renderRow'></div>
+		<!--描述列表-->
+		<ng-template #renderRow>
+			<div class='describe'>
+				<div *ngIf='desc.showImgLeft; then showImageAtLeft else showImageAtRight'></div>
+				<!--图片在左-->
+				<ng-template #showImageAtLeft>
+					<div>
+						<img
+							[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
+							loading='lazy'
+						>
+					</div>
+					<div class='textContainer'>
+						<div class='title'>{{desc.title}}</div>
+						<div *ngFor='let content of desc.content' class='label'>{{content}}</div>
+					</div>
+				</ng-template>
+				<!--图片在右-->
+				<ng-template #showImageAtRight>
+					<div class='textContainer'>
+						<div class='title'>{{desc.title}}</div>
+						<div *ngFor='let content of desc.content' class='label'>{{content}}</div>
+					</div>
+					<div>
+						<img
+							[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
+							loading='lazy'
+						>
+					</div>
+				</ng-template>
+			</div>
+		</ng-template>
+		<!--绘制卡片-->
+		<ng-template #renderCard>
+			<div class='describe'>
+				<a [routerLink]='desc.routeLink' class='card'>
+					<img
+						[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
+						loading='lazy'
+					>
+					<div class='labelContainer'>
+						<div class='title'>{{desc.title}}</div>
+						<p *ngFor='let content of desc.content'>
+							{{content}}
+						</p>
+					</div>
+				</a>
+			</div>
+		</ng-template>
+	</div>
+</article>

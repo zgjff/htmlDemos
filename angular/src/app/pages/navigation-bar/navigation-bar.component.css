@@ -14,6 +14,7 @@ button {
 	align-self: stretch;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 	margin: 0 8px 0 0;
 	min-width: 64px;
 	outline: none;
