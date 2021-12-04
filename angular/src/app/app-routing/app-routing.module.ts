@@ -5,12 +5,13 @@ import { HomeComponent } from '../pages/home/home.component'
 import { FeaturesComponent } from '../pages/features/features.component'
 
 const routes: Routes = [
-	{ path: '', component: HomeComponent },
-	{ path: 'features', component: FeaturesComponent }
+	{ path: '', component: HomeComponent, pathMatch: 'full' },
+	{ path: 'features', component: FeaturesComponent },
+	{ path: '**', component: HomeComponent }
 ]
 
 @NgModule({
-	imports: [PagesModule, RouterModule.forRoot(routes)],
+	imports: [PagesModule, RouterModule.forRoot(routes, {})],
 	exports: [RouterModule]
 })
 

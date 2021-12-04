@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { Link } from '../../services/models/link'
-import { ActivatedRoute } from '@angular/router'
+import { NavigationBarService } from '../../services/navigation-bar.service'
+import { PlatformInfo } from '../../services/models/platform-info'
 
 @Component({
 	selector: 'app-navigation-bar',
@@ -19,26 +20,51 @@ export class NavigationBarComponent implements OnInit {
 	/**
 	 * 导航菜单
 	 */
-	menus: Link[] = []
+	menus: [showSidebar: boolean, link: Link][] = []
+	/**
+	 * 其它平台信息
+	 */
+	platformInfos: PlatformInfo[] = []
 
-	constructor(private route: ActivatedRoute) {}
+	constructor(private navigationBarService: NavigationBarService) {}
 
 	ngOnInit() {
-		this.route.url.subscribe((obj) => {
-			console.log(obj)
-		})
-		this.menus = [
-			{ title: '特性', url: '/features', target: '_self' },
-			{ title: '文档', url: '/app', target: '_self' },
-			{ title: '资源', url: '/app1', target: '_self' },
-			{ title: '活动', url: '/app2', target: '_self' },
-			{ title: '译者博客', url: '/app3', target: '_blank' },
-			{ title: '关于中文版', url: '/app4', target: '_self' }
-		]
+		this.getMenus()
+		this.getPlatformInfos()
 	}
 
 	/**
 	 * 点击侧边栏按钮
 	 */
 	onClickSidebarButton() {}
+
+	/**
+	 * 点击logo
+	 */
+	onClickNaviLogo() {
+		this.canShowSidebar = false
+	}
+
+	/**
+	 * 点击logo
+	 */
+	onClickRouteLink(showSidebar: boolean) {
+		this.canShowSidebar = showSidebar
+	}
+
+	/**
+	 * 获取导航菜单
+	 * @private
+	 */
+	private getMenus() {
+		this.navigationBarService.getMenus().subscribe((values) => {
+			this.menus = values
+		})
+	}
+
+	private getPlatformInfos() {
+		this.navigationBarService.getPlatformsInfo().subscribe((values) => {
+			this.platformInfos = values
+		})
+	}
 }

@@ -14,4 +14,8 @@ export interface Link {
 	 * 打开方式
 	 */
 	target: '_self' | '_blank' | '_top' | '_parent'
+	/**
+	 * 是否是本app内的router
+	 */
+	isAppRouteLink: boolean
 }
