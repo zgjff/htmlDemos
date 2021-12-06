@@ -7,7 +7,10 @@ import { FeaturesComponent } from '../pages/features/features.component'
 const routes: Routes = [
 	{ path: '', component: HomeComponent, pathMatch: 'full' },
 	{ path: 'features', component: FeaturesComponent },
-	{ path: '**', component: HomeComponent }
+	{
+		path: '**',
+		component: HomeComponent
+	}
 ]
 
 @NgModule({

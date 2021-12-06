@@ -1,0 +1,21 @@
+<app-title-header title='特性与优点'></app-title-header>
+<article>
+	<!--section-->
+	<div *ngFor='let feature of features; last as isLast' [class.none-border-bottom]='isLast' class='section'>
+		<!--header-->
+		<div class='sectionHeader'>
+			<h3>{{feature.title}}</h3>
+			<img [attr.src]='feature.icon' alt='图标'>
+		</div>
+		<!--row-->
+		<ul>
+			<li *ngFor='let item of feature.contents'>
+				<div class='title'>{{item[0]}}</div>
+				<p>{{item[1]}}</p>
+			</li>
+		</ul>
+	</div>
+	<div class='startBox'>
+		<a routerLink='/start'>立即开始</a>
+	</div>
+</article>

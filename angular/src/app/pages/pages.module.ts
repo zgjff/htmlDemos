@@ -4,10 +4,11 @@ import { HomeComponent } from './home/home.component'
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component'
 import { FooterComponent } from './footer/footer.component'
 import { FeaturesComponent } from './features/features.component'
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
+import { TitleHeaderComponent } from './title-header/title-header.component'
 
 @NgModule({
-	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent],
+	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent],
 	imports: [ShareModule, RouterModule],
 	exports: [FooterComponent, NavigationBarComponent]
 })
