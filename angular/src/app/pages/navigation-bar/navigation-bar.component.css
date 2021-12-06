@@ -1,13 +1,23 @@
-:host {
+.container {
 	align-items: center;
 	background-color: transparent;
 	box-shadow: none;
 	color: white;
 	display: flex;
+	left: 0;
+	min-height: 64px;
 	position: absolute;
+	right: 0;
+	top: 0;
 	transition: background-color .2s linear;
 	width: 100%;
 	z-index: 10;
+}
+
+.container.isFixed {
+	background-color: #0d47a1;
+	box-shadow: 0 2px 5px #0000004d;
+	position: fixed;
 }
 
 button {

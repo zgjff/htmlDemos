@@ -13,34 +13,17 @@
 		<div *ngIf='isLast; then renderCard else renderRow'></div>
 		<!--描述列表-->
 		<ng-template #renderRow>
-			<div class='describe'>
-				<div *ngIf='desc.showImgLeft; then showImageAtLeft else showImageAtRight'></div>
-				<!--图片在左-->
-				<ng-template #showImageAtLeft>
-					<div>
-						<img
-							[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
-							loading='lazy'
-						>
-					</div>
-					<div class='textContainer'>
-						<div class='title'>{{desc.title}}</div>
-						<div *ngFor='let content of desc.content' class='label'>{{content}}</div>
-					</div>
-				</ng-template>
-				<!--图片在右-->
-				<ng-template #showImageAtRight>
-					<div class='textContainer'>
-						<div class='title'>{{desc.title}}</div>
-						<div *ngFor='let content of desc.content' class='label'>{{content}}</div>
-					</div>
-					<div>
-						<img
-							[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
-							loading='lazy'
-						>
-					</div>
-				</ng-template>
+			<div [class.rowReverse]='desc.showImgLeft' class='describe'>
+				<div class='textContainer'>
+					<div class='title'>{{desc.title}}</div>
+					<div *ngFor='let content of desc.content' class='label'>{{content}}</div>
+				</div>
+				<div>
+					<img
+						[attr.alt]='desc.imgAlt' [attr.src]='desc.imgUrl' [attr.width]='desc.imgWidth' class='image'
+						loading='lazy'
+					>
+				</div>
 			</div>
 		</ng-template>
 		<!--绘制卡片-->

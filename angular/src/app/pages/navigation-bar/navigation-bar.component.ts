@@ -18,6 +18,10 @@ export class NavigationBarComponent implements OnInit {
 	 */
 	canShowSidebar = false
 	/**
+	 * 是否是fixed定位
+	 */
+	isFixed = false
+	/**
 	 * 导航菜单
 	 */
 	menus: [showSidebar: boolean, link: Link][] = []
@@ -43,13 +47,15 @@ export class NavigationBarComponent implements OnInit {
 	 */
 	onClickNaviLogo() {
 		this.canShowSidebar = false
+		this.isFixed = false
 	}
 
 	/**
-	 * 点击logo
+	 * 点击app内部路由
 	 */
 	onClickRouteLink(showSidebar: boolean) {
 		this.canShowSidebar = showSidebar
+		this.isFixed = true
 	}
 
 	/**

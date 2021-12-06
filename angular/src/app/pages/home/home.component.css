@@ -87,7 +87,7 @@ article .rows.hiddenDivider {
 	border-bottom: 0
 }
 
-article .describe {
+.describe {
 	align-items: center;
 	box-sizing: border-box;
 	display: flex;
@@ -97,6 +97,10 @@ article .describe {
 	max-width: 920px;
 }
 
+.describe.rowReverse {
+	flex-direction: row-reverse;
+}
+
 .describe .image {
 	height: auto;
 	margin: auto;
@@ -104,8 +108,8 @@ article .describe {
 }
 
 .textContainer {
-	max-width: 50%;
-	padding-right: 15%;
+	max-width: 40%;
+	padding-right: 5%;
 }
 
 .describe .title {
@@ -159,7 +163,3 @@ article .describe {
 	margin: 0;
 	padding: 8px 0;
 }
-
-/*.card > a {*/
-/*	text-decoration: underline;*/
-/*}*/

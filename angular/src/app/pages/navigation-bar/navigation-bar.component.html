@@ -1,42 +1,46 @@
-<!--侧边栏按钮-->
-<button (click)='onClickSidebarButton()' [class.hidden]='!canShowSidebar' type='button'>
-	<div class='svgBox'>
-		<svg focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-			<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
-		</svg>
+<div [class.isFixed]='isFixed' class='container'>
+	<!--侧边栏按钮-->
+	<button (click)='onClickSidebarButton()' [class.hidden]='!canShowSidebar' type='button'>
+		<div class='svgBox'>
+			<svg focusable='false' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+				<path d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'></path>
+			</svg>
+		</div>
+	</button>
+	<!--首页logo-->
+	<a (click)='onClickNaviLogo()' [routerLink]="'/'" class='naviLogo'>
+		<img alt='首页logo' class='naviLogo' src='assets/images/logo-nav@2x.png'>
+	</a>
+	<nav>
+		<ul>
+			<li *ngFor='let menu of menus'>
+				<div *ngIf='menu[1].isAppRouteLink; then aRouterLink else aHref'></div>
+				<ng-template #aRouterLink>
+					<a (click)='onClickRouteLink(menu[0])' [routerLink]='menu[1].url'>{{menu[1].title}}</a>
+				</ng-template>
+				<ng-template #aHref>
+					<a
+						(click)='onClickRouteLink(menu[0])' href='{{menu[1].url}}'
+						target='{{menu[1].target}}'
+					>{{menu[1].title}}</a>
+				</ng-template>
+			</li>
+		</ul>
+	</nav>
+	<!--搜索-->
+	<div class='searchContainer'>
+		<input placeholder='搜索' type='search'>
 	</div>
-</button>
-<!--首页logo-->
-<a (click)='onClickNaviLogo()' [routerLink]="'/'" class='naviLogo'>
-	<img alt='首页logo' class='naviLogo' src='assets/images/logo-nav@2x.png'>
-</a>
-<nav>
-	<ul>
-		<li *ngFor='let menu of menus'>
-			<div *ngIf='menu[1].isAppRouteLink; then aRouterLink else aHref'></div>
-			<ng-template #aRouterLink>
-				<a (click)='onClickRouteLink(menu[0])' [routerLink]='menu[1].url'>{{menu[1].title}}</a>
-			</ng-template>
-			<ng-template #aHref>
-				<a
-					(click)='onClickRouteLink(menu[0])' href='{{menu[1].url}}'
-					target='{{menu[1].target}}'
-				>{{menu[1].title}}</a>
-			</ng-template>
-		</li>
-	</ul>
-</nav>
-<div class='searchContainer'>
-	<input placeholder='搜索' type='search'>
+	<!--第三方平台-->
+	<nav class='svgContainer'>
+		<div *ngFor='let platform of platformInfos'>
+			<a class='svgButton' href='{{platform.url}}' target='_blank' title='{{platform.title}}'>
+				<div class='svgBox'>
+					<svg [attr.viewBox]=platform.svgViewBox focusable='false' xmlns='http://www.w3.org/2000/svg'>
+						<path [attr.d]='platform.svgPath'></path>
+					</svg>
+				</div>
+			</a>
+		</div>
+	</nav>
 </div>
-<nav class='svgContainer'>
-	<div *ngFor='let platform of platformInfos'>
-		<a class='svgButton' href='{{platform.url}}' target='_blank' title='{{platform.title}}'>
-			<div class='svgBox'>
-				<svg [attr.viewBox]=platform.svgViewBox focusable='false' xmlns='http://www.w3.org/2000/svg'>
-					<path [attr.d]='platform.svgPath'></path>
-				</svg>
-			</div>
-		</a>
-	</div>
-</nav>
