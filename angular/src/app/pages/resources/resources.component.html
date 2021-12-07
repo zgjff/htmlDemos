@@ -1,0 +1,13 @@
+<app-title-header title='浏览 ANGULAR 相关资源'></app-title-header>
+<article>
+	<!--类型按钮-->
+	<div class='toolBar'>
+		<button
+			(click)='onClickCategory(category)' *ngFor='let category of resources_category'
+			[class.isSelected]='category === selected_category'
+			type='button'
+		>
+			{{category}}
+		</button>
+	</div>
+</article>

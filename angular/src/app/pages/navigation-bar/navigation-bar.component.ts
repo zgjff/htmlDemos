@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnDestroy, OnInit } from '@angular/core'
 import { Link } from '../../services/models/link'
 import { NavigationBarService } from '../../services/navigation-bar.service'
 import { PlatformInfo } from '../../services/models/platform-info'
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router'
+import { filter, map, Subscription } from 'rxjs'
 
 @Component({
 	selector: 'app-navigation-bar',
@@ -12,7 +14,7 @@ import { PlatformInfo } from '../../services/models/platform-info'
 /**
  * 导航栏
  */
-export class NavigationBarComponent implements OnInit {
+export class NavigationBarComponent implements OnInit, OnDestroy {
 	/**
 	 * 是否可以显示侧边栏
 	 */
@@ -29,12 +31,39 @@ export class NavigationBarComponent implements OnInit {
 	 * 其它平台信息
 	 */
 	platformInfos: PlatformInfo[] = []
+	private subscription?: Subscription
 
-	constructor(private navigationBarService: NavigationBarService) {}
+	constructor(
+		private navigationBarService: NavigationBarService,
+		private route: ActivatedRoute,
+		private router: Router
+	) {
+		this.subscription = router.events
+			.pipe(
+				filter((event) => event instanceof NavigationEnd),
+				map(() => this.rootRoute(this.route)),
+				filter((route: ActivatedRoute) => route.outlet === 'primary')
+			)
+			.subscribe((value) => {
+				const urls = value.snapshot.url
+				if (urls.length == 0) {
+					this.canShowSidebar = false
+					this.isFixed = false
+					return
+				}
+				const path = urls[0].path
+				this.canShowSidebar = path === 'docs'
+				this.isFixed = true
+			})
+	}
 
 	ngOnInit() {
 		this.getMenus()
 		this.getPlatformInfos()
+	}
+
+	ngOnDestroy() {
+		this.subscription?.unsubscribe()
 	}
 
 	/**
@@ -42,20 +71,11 @@ export class NavigationBarComponent implements OnInit {
 	 */
 	onClickSidebarButton() {}
 
-	/**
-	 * 点击logo
-	 */
-	onClickNaviLogo() {
-		this.canShowSidebar = false
-		this.isFixed = false
-	}
-
-	/**
-	 * 点击app内部路由
-	 */
-	onClickRouteLink(showSidebar: boolean) {
-		this.canShowSidebar = showSidebar
-		this.isFixed = true
+	rootRoute(route: ActivatedRoute): ActivatedRoute {
+		while (route.firstChild) {
+			route = route.firstChild
+		}
+		return route
 	}
 
 	/**

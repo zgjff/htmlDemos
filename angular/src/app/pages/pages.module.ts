@@ -5,10 +5,11 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { FooterComponent } from './footer/footer.component'
 import { FeaturesComponent } from './features/features.component'
 import { RouterModule } from '@angular/router';
-import { TitleHeaderComponent } from './title-header/title-header.component'
+import { TitleHeaderComponent } from './title-header/title-header.component';
+import { ResourcesComponent } from './resources/resources.component'
 
 @NgModule({
-	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent],
+	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent, ResourcesComponent],
 	imports: [ShareModule, RouterModule],
 	exports: [FooterComponent, NavigationBarComponent]
 })

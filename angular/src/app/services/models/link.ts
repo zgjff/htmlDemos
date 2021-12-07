@@ -1,3 +1,5 @@
+import { Params } from '@angular/router'
+
 /**
  * 链接🔗
  */
@@ -18,4 +20,8 @@ export interface Link {
 	 * 是否是本app内的router
 	 */
 	isAppRouteLink: boolean
+	/**
+	 * app内部链接的查询参数
+	 */
+	queryParams?: Params
 }

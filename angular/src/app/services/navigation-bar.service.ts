@@ -21,7 +21,16 @@ export class NavigationBarService {
 		const menus: [showSidebar: boolean, link: Link][] = [
 			[false, { title: '特性', url: '/features', target: '_self', isAppRouteLink: true }],
 			[true, { title: '文档', url: '/docs', target: '_self', isAppRouteLink: true }],
-			[false, { title: '资源', url: '/resources', target: '_self', isAppRouteLink: true }],
+			[
+				false,
+				{
+					title: '资源',
+					url: '/resources/',
+					target: '_self',
+					isAppRouteLink: true,
+					queryParams: { category: '开发' }
+				}
+			],
 			[false, { title: '活动', url: '/events', target: '_self', isAppRouteLink: true }],
 			[
 				false,

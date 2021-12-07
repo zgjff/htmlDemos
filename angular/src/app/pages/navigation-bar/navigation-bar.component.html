@@ -8,7 +8,7 @@
 		</div>
 	</button>
 	<!--首页logo-->
-	<a (click)='onClickNaviLogo()' [routerLink]="'/'" class='naviLogo'>
+	<a [routerLink]="'/'" class='naviLogo'>
 		<img alt='首页logo' class='naviLogo' src='assets/images/logo-nav@2x.png'>
 	</a>
 	<nav>
@@ -16,11 +16,14 @@
 			<li *ngFor='let menu of menus'>
 				<div *ngIf='menu[1].isAppRouteLink; then aRouterLink else aHref'></div>
 				<ng-template #aRouterLink>
-					<a (click)='onClickRouteLink(menu[0])' [routerLink]='menu[1].url'>{{menu[1].title}}</a>
+					<a
+						[queryParams]='menu[1].queryParams'
+						[routerLink]='menu[1].url'
+					>{{menu[1].title}}</a>
 				</ng-template>
 				<ng-template #aHref>
 					<a
-						(click)='onClickRouteLink(menu[0])' href='{{menu[1].url}}'
+						href='{{menu[1].url}}'
 						target='{{menu[1].target}}'
 					>{{menu[1].title}}</a>
 				</ng-template>
