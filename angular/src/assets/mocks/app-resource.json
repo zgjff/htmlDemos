@@ -385,6 +385,161 @@
 	  {
 		"title": "书籍",
 		"list": [
+		  {
+			"title": "Angular Projects - Second Edition",
+			"content": "Build modern web apps by exploring Angular with 10 different projects and cutting-edge technologies",
+			"url": "https://www.packtpub.com/product/angular-projects-second-edition/9781800205260/"
+		  },
+		  {
+			"title": "Angular 路由器",
+			"content": "本书是由其设计师编写的有关 Angular 路由器的综合指南。该书深入探讨了库，包括思维模型、设计约束、API 的精妙之处。",
+			"url": "https://leanpub.com/router/"
+		  },
+		  {
+			"title": "Angular-Buch（德语）",
+			"content": "第一本有关 Angular 的德语书籍。它为你提供了平台关键概念的详细实践概述。在每一章中，示例应用程序都是基于新的 Angular 主题构建的。所有资源都可以在 GitHub 上找到。",
+			"url": "https://angular-buch.com/"
+		  },
+		  {
+			"title": "使用 NGRX 设计 Angular 应用",
+			"content": "如何使用 NGRX 构建 Angular 应用",
+			"url": "https://www.packtpub.com/web-development/architecting-angular-applications-redux/"
+		  },
+		  {
+			"title": "成为 Angular 忍者",
+			"content": "这本电子书将帮助你了解框架的理念：来自 1.x 的内容、新引入的内容以及原因",
+			"url": "https://books.ninja-squad.com/angular/"
+		  },
+		  {
+			"title": "用 Angular 开发",
+			"content": "Angular 框架、ES6、TypeScript、webpack 和 Angular CLI 的实践之旅。",
+			"url": "https://leanpub.com/developing-with-angular/"
+		  },
+		  {
+			"title": "Angular 本质论",
+			"content": "这本书是由核心贡献者 Victor Savkin 和 Jeff Cross 撰写的有关 Angular 关键方面的简短但同时相当完整的概述。这本书将为你打下坚实的基础。它将帮助你将所有概念放入正确的位置。这样，你就能很好地理解本框架为何如此。",
+			"url": "https://gumroad.com/l/essential_angular/"
+		  },
+		  {
+			"title": "How to integrate ButterCMS into Angular 2+ App",
+			"content": "Integrate a Headless CMS into your Angular App, create blog posts and pages",
+			"url": "https://medium.com/orlyknop/how-to-integrate-buttercms-into-angular-2-app-a1baaa51402/"
+		  },
+		  {
+			"title": "学习 Angular - 第三版",
+			"content": "使用 Angular 和 TypeScript 构建 Web 应用程序的入门指南",
+			"url": "https://www.packtpub.com/product/learning-angular-third-edition/9781839210662/"
+		  },
+		  {
+			"title": "ng-book",
+			"content": "关于 Angular 的深入、完整和最新的书。立即成为 Angular 专家。",
+			"url": "https://www.ng-book.com/2/"
+		  },
+		  {
+			"title": "NgRx: Reactive State Management for Angular",
+			"content": "Comprehensive learning resource on building Angular apps with NgRx",
+			"url": "https://gumroad.com/l/angular-ngrx-book/"
+		  },
+		  {
+			"title": "O'Reilly 媒体",
+			"content": "O'Reilly 撰写的有关 Angular 的超过 15 本书",
+			"url": "https://ssearch.oreilly.com/?q=angular/"
+		  },
+		  {
+			"title": "Packt 出版",
+			"content": "Packt 出版了 10 多本有关 Angular 的书",
+			"url": "https://www.packtpub.com/catalogsearch/result/?q=angular/"
+		  },
+		  {
+			"title": "Reactive State for Angular with NgRx",
+			"content": "Learn how to build a Reactive Application with Ngrx and Angular",
+			"url": "https://bpbonline.com/products/reactive-state-for-angular-with-ngrx/"
+		  }
+		]
+	  },
+	  {
+		"title": "工作室 & 现场培训",
+		"list": [
+		  {
+			"title": "加速器",
+			"content": "定制的讲师指导的 Angular 培训",
+			"url": "https://www.accelebrate.com/angular-training/"
+		  },
+		  {
+			"title": "Angular Academy（加拿大）",
+			"content": "Angular Academy 是为期两天的动手实践公开课程，在加拿大境内亲自授课！",
+			"url": "https://www.angularacademy.ca/"
+		  },
+		  {
+			"title": "Angular Architects（德语和英语）",
+			"content": "深入培训和咨询，重点关注企业级 Angular 应用程序和架构（远程，现场公司培训和公共研讨会）。我们还会定期发布有关这些主题的博客。",
+			"url": "https://www.angulararchitects.io/"
+		  },
+		  {
+			"title": "Angular 训练营",
+			"content": "Angular 新兵训练营涵盖了高级 Angular 主题的介绍。它包括广泛的研讨会，在我们经验丰富的开发人员培训人员的动手帮助下。我们从对 Angular 的了解开始就通过对所有 Angular 基本功能的实际了解来吸引开发人员或团队。",
+			"url": "https://angularbootcamp.com/"
+		  },
+		  {
+			"title": "Angular 动手课程（以色列）",
+			"content": "向以色列的 Angular 咨询公司 500Tech 学习。本课程由整天使用 Angular 的专业开发人员构建，并具有实际的大型 Angular 应用程序实践经验。",
+			"url": "https://500tech.com/courses/angular/"
+		  },
+		  {
+			"title": "Angular 培训",
+			"content": "此 Angular 培训在世界各地现场教授 Angular。还提供咨询和指导。",
+			"url": "https://www.angulartraining.com/"
+		  },
+		  {
+			"title": "Angular 培训（法语）",
+			"content": "Zenika（法国）提供的 Angular 培训",
+			"url": "https://training.zenika.com/fr/training/angular/description/"
+		  },
+		  {
+			"title": "Angular.de（德语）",
+			"content": "由德语区最大的社区在德国、奥地利和瑞士提供的现场 Angular 培训。我们还定期在博客上发布文章和教程。",
+			"url": "https://angular.de/"
+		  }
+		]
+	  },
+	  {
+		"title": "在线培训",
+		"list": [
+		  {
+			"title": "Binaria 学院（español）",
+			"content": "西班牙语 Angular 文章和信息",
+			"url": "https://academia-binaria.com/"
+		  },
+		  {
+			"title": "Angular Architect Training",
+			"content": "Whether you're already an architect or you'd like to become one, come learn how to keep your apps clean and fast (especially at the enterprise level). Four weeks of training includes live office hours every week with an Angular GDE, diversity discounts, and scholarships available!",
+			"url": "https://www.angularnation.net/"
+		  },
+		  {
+			"title": "Angular 的概念、代码和集体智慧",
+			"content": "学学核心概念、玩玩代码，成为有能力的 Angular 开发人员",
+			"url": "https://www.udemy.com/angular-2-concepts-code-and-collective-wisdom/"
+		  },
+		  {
+			"title": "Angular 企业手册",
+			"content": "了解由 Nrwl.io 创建的针对企业团队的高级 Angular 最佳实践。",
+			"url": "https://angularplaybook.com/"
+		  },
+		  {
+			"title": "Angular in Action: Start From Scratch (正體中文)",
+			"content": "针对需要从头开始学习的新手的中文在线视频课程。它涵盖了 Angular、Angular CLI、TypeScript、VSCode，以及一些有关 Angular 开发的必知知识。",
+			"url": "https://www.udemy.com/angular-zero/?couponCode=ANGULAR.IO/"
+		  },
+		  {
+			"title": "Angular Pro Screencast",
+			"content": "Youtube Channel. Online videos in English and Russian providing in-depth coverage of the Angular advanced topics.",
+			"url": "https://www.youtube.com/playlist?list=PLLf-VBOaoVk1E9fTBZdq1CfnRa2TtL_Kb/"
+		  },
+		  {
+			"title": "angular.love（波兰语）",
+			"content": "波兰语 Angular 文章和信息",
+			"url": "https://www.angular.love/"
+		  }
 		]
 	  }
 	]
@@ -395,6 +550,96 @@
 	  {
 		"title": "社区作品",
 		"list": [
+		  {
+			"title": "Angular Builders",
+			"content": "A collection of Angular builders for your Angular projects",
+			"url": "https://angular-builders.dev/"
+		  },
+		  {
+			"title": "Angular Community Meetup",
+			"content": "Come learn technical skills and network at this monthly, multi-series, multi-event, multi-timezone online meetup.",
+			"url": "https://angularcommunity.net/"
+		  },
+		  {
+			"title": "俄罗斯莫斯科的 Angular 会议和营地。",
+			"content": "GitHub 上的 Angular-RU 社区是俄罗斯 Angular 的所有资源、聊天、播客和聚会的单一入口。",
+			"url": "https://angular-ru.github.io/"
+		  },
+		  {
+			"title": "Angular inDepth",
+			"content": "同行评审过的 Angular 文章和教程。",
+			"url": "https://indepth.dev/angular/"
+		  },
+		  {
+			"title": "Angular Nation",
+			"content": "Angular Nation is a free private network created for Angular developers to network, collaborate, and ask questions.",
+			"url": "https://www.angularnation.net/"
+		  },
+		  {
+			"title": "Angular Subreddit",
+			"content": "Angular 专用的 subreddit。",
+			"url": "https://www.reddit.com/r/Angular2/"
+		  },
+		  {
+			"title": "API Based CMS with Butter",
+			"content": "Add API Based CMS to your Angular app",
+			"url": "https://github.com/ButterCMS/buttercms-angular-tutorial/"
+		  },
+		  {
+			"title": "Angular 组件和库的名录",
+			"content": "GitHub 上维护的组件和库的社区索引",
+			"url": "https://github.com/brillout/awesome-angular-components/"
+		  },
+		  {
+			"title": "DEV 社区",
+			"content": "在 DEV 社区上阅读和共享有关 Angular 的内容并聊天。",
+			"url": "https://dev.to/t/angular/"
+		  },
+		  {
+			"title": "Made with Angular",
+			"content": "展示了基于 Angular 构建的 Web 应用程序。",
+			"url": "https://www.madewithangular.com/"
+		  }
+		]
+	  },
+	  {
+		"title": "Podcasts 视频",
+		"list": [
+		  {
+			"title": "Angular 历险记",
+			"content": "Angular 历险记是一个每周播客，致力于 Angular 平台以及相关技术、工具、语言和实践。",
+			"url": "https://devchat.tv/adv-in-angular/"
+		  },
+		  {
+			"title": "深度剖析",
+			"content": "有关 Angular、RxJS、TypeScript 和其他技术的高级 Web 开发播客。仅英语，音频。",
+			"url": "https://ngxp.show/"
+		  },
+		  {
+			"title": "Angular Rocks",
+			"content": "Podcast for those who want to know more about Angular \uD83D\uDE80",
+			"url": "https://angularrocks.com/"
+		  },
+		  {
+			"title": "AngularAir",
+			"content": "由 Jeff Whelpley 主持的每周视频播客，其中包含 Angular 世界中的所有最新和最大的事件。",
+			"url": "https://angularair.com/"
+		  },
+		  {
+			"title": "开心 Angular 播客",
+			"content": "德国的 Angular 每周播客",
+			"url": "https://happy-angular.de/"
+		  },
+		  {
+			"title": "NgRuAir",
+			"content": "关于 Angular 的俄语视频播客。",
+			"url": "https://github.com/ngRuAir/ngruair/"
+		  },
+		  {
+			"title": "The Angular Show",
+			"content": "ng-conf's official all-Angular podcast.",
+			"url": "https://www.spreaker.com/show/angular-show/"
+		  }
 		]
 	  }
 	]

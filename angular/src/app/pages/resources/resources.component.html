@@ -13,7 +13,12 @@
 	<!--section-->
 	<ul class='section'>
 		<li *ngFor='let resources of appResources'>
-			{{resources.title}}
+			<h3 class='title'>{{resources.title}}</h3>
+			<!--row-->
+			<a *ngFor='let item of resources.list' [attr.href]='item.url' target='_blank'>
+				<h4>{{item.title}}</h4>
+				<p>{{item.content}}</p>
+			</a>
 		</li>
 	</ul>
 </article>

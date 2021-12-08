@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs'
 import { ResourcesService } from '../../services/resources.service'
 import { ResourcesCategory } from '../../services/models/app-resources'
 import { AppResource } from '../../services/models/app-resource'
+import { Title } from '@angular/platform-browser'
 
 @Component({
 	selector: 'app-resources',
@@ -32,8 +33,10 @@ export class ResourcesComponent implements OnInit, OnDestroy {
 	constructor(
 		private router: Router,
 		private route: ActivatedRoute,
-		private resourcesService: ResourcesService
+		private resourcesService: ResourcesService,
+		private title: Title
 	) {
+		this.title.setTitle('Angular - 浏览 ANGULAR 相关资源')
 		this.selected_category = resourcesService.defaultCategory
 	}
 
