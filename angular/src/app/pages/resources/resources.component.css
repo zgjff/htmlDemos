@@ -1,6 +1,7 @@
 article {
+	color: white;
 	margin: 0 auto;
-	max-width: 62.5em
+	max-width: 62.5em;
 }
 
 .toolBar {
@@ -26,4 +27,12 @@ button {
 
 button.isSelected, button:hover {
 	background-color: #1976d2;
+}
+
+ul.section {
+
+}
+
+ul.row {
+
 }

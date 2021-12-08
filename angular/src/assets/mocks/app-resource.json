@@ -1,0 +1,402 @@
+[
+  {
+	"category": "开发",
+	"resources": [
+	  {
+		"title": "各种 IDE",
+		"list": [
+		  {
+			"title": "MetaMagic 的 Amexio Canvas 是基于 Web 的拖放式 IDE",
+			"content": "Amexio Canvas 是一个拖放式环境，用于创建完全响应式的 Web 和智能设备的 HTML5 / Angular 应用程序。代码将由 Canvas 自动生成并进行热部署以进行实时测试。开箱即用的 50 多种 Material Design Theme 支持。可以将你的代码提交到 GitHub 公共或私有存储库。",
+			"url": "https://amexio.tech/"
+		  },
+		  {
+			"title": "Webclipse 的 Angular IDE",
+			"content": "首先为 Angular 构建。对初学者提供交钥匙设置；对专家提供强大的功能。",
+			"url": "https://www.genuitec.com/products/angular-ide/"
+		  },
+		  {
+			"title": "IntelliJ IDEA",
+			"content": "功能强大且符合人体工程学的 Java * IDE",
+			"url": "https://www.jetbrains.com/idea/"
+		  },
+		  {
+			"title": "Visual Studio Code",
+			"content": "VS Code 是用于编辑和调试 Web 应用程序的免费、轻量级工具。",
+			"url": "https://code.visualstudio.com/"
+		  },
+		  {
+			"title": "WebStorm",
+			"content": "轻巧但功能强大的 IDE，完全适合通过 Node.js 进行复杂的客户端开发和服务器端开发",
+			"url": "https://www.jetbrains.com/webstorm/"
+		  }
+		]
+	  },
+	  {
+		"title": "工具",
+		"list": [
+		  {
+			"title": "Angular CLI",
+			"content": "官方的 Angular CLI 使创建和开发应用程序变得很容易，从最初的提交到生产部署。它已经按照我们的最佳实践开箱即用！",
+			"url": "https://angular.io/cli/"
+		  },
+		  {
+			"title": "Angular ESLint",
+			"content": "Angular 项目的静态分析。",
+			"url": "https://github.com/angular-eslint/angular-eslint#readme"
+		  },
+		  {
+			"title": "Angular 游乐场",
+			"content": "用于开发、测试和文档化 Angular 应用程序的 UI 开发环境。",
+			"url": "https://angularplayground.it/"
+		  },
+		  {
+			"title": "Angular Universal",
+			"content": "Angular 应用程序的服务器端渲染。",
+			"url": "https://angular.io/guide/universal"
+		  },
+		  {
+			"title": "angular-prerender",
+			"content": "A command line tool to prerender Angular Apps that uses Angular Universal but also supports Scully plugins.",
+			"url": "https://github.com/chrisguttandin/angular-prerender"
+		  },
+		  {
+			"title": "Compodoc",
+			"content": "该工具为 Angular 应用程序生成专用文档。",
+			"url": "https://github.com/compodoc/compodoc"
+		  },
+		  {
+			"title": "Lite-server",
+			"content": "仅供开发使用的轻量级 Node.js® 服务器",
+			"url": "https://github.com/johnpapa/lite-server"
+		  },
+		  {
+			"title": "ng-mocks",
+			"content": "A testing library for creating mock services, components, directives, pipes and modules out of annoying dependencies in unit tests.",
+			"url": "https://github.com/ike18t/ng-mocks#readme"
+		  },
+		  {
+			"title": "Nx",
+			"content": "Nx（用于 Angular 的 Nrwl 扩展）是一个基于 Angular CLI 构建的开源工具包，可帮助企业团队大规模开发 Angular。",
+			"url": "https://nrwl.io/nx"
+		  },
+		  {
+			"title": "observer-spy",
+			"content": "A library for testing RxJS observables that offers an alternative to Marble Tests.",
+			"url": "https://github.com/hirezio/observer-spy"
+		  },
+		  {
+			"title": "Protractor",
+			"content": "Angular 应用的官方端到端测试框架",
+			"url": "https://protractor.angular.io/"
+		  },
+		  {
+			"title": "Scully",
+			"content": "Scully（用于 Angular 的 Jamstack 工具链）使构建、测试和部署 Jamstack 应用程序极为简单。",
+			"url": "https://scully.io/"
+		  },
+		  {
+			"title": "UI Bakery",
+			"content": "Google Chrome 开发工具的扩展程序，用于调试 Angular 应用程序。",
+			"url": "https://uibakery.io/"
+		  }
+		]
+	  },
+	  {
+		"title": "数据管理库",
+		"list": [
+		  {
+			"title": "Akita",
+			"content": "秋田（Akita）是一种状态管理模式，建立在 RxJS 之上，它采用 Flux 的多数据存储和 Redux 的不可变更新以及流数据的概念来创建 Observable Data Store 模型。",
+			"url": "https://datorama.github.io/akita/docs/angular/architecture/"
+		  },
+		  {
+			"title": "Angular Fire",
+			"content": "Firebase 和 Angular 的官方库",
+			"url": "https://github.com/angular/angularfire2/"
+		  },
+		  {
+			"title": "Apollo",
+			"content": "Apollo 是使用 GraphQL 构建现代应用程序的数据技术栈。",
+			"url": "https://www.apollographql.com/docs/angular/"
+		  },
+		  {
+			"title": "ButterCMS",
+			"content": "ButterCMS is a headless CMS that lets you manage content using our dashboard and integrate it into your Angular Application",
+			"url": "https://buttercms.com/docs/api-client/angular/"
+		  },
+		  {
+			"title": "Formly",
+			"content": "Formly 是基于 Angular 响应式表单构建的动态（基于 JSON 的）表单库。",
+			"url": "https://formly.dev/"
+		  },
+		  {
+			"title": "Meteor",
+			"content": "使用 Angular 和 Meteor 构建用于移动和桌面的全栈 JavaScript 应用。",
+			"url": "https://github.com/urigo/angular-meteor/"
+		  },
+		  {
+			"title": "ngrx",
+			"content": "Angular 的响应式扩展",
+			"url": "https://ngrx.io/"
+		  },
+		  {
+			"title": "ngx-api-utils",
+			"content": "ngx-api-utils 是一个精简的实用程序和帮助程序库，用于快速将任何 HTTP API（REST、Ajax 等）与 Angular 集成。",
+			"url": "https://github.com/ngx-api-utils/ngx-api-utils/"
+		  },
+		  {
+			"title": "NGXS",
+			"content": "NGXS 是 Angular 的状态管理模式+库。 NGXS 是根据 Redux 和 NgRx 等库中普遍实现的 CQRS 模式进行建模的，但是通过使用现代 TypeScript 功能（如类和装饰器）减少了样板代码。",
+			"url": "https://ngxs.io/"
+		  },
+		  {
+			"title": "rx-angular",
+			"content": "RxAngular is a reactive library that provides extensions for developing high performant and scalable applications. It addresses the issues of local state management, rendering performance, and reactive architecture.",
+			"url": "https://rx-angular.io/"
+		  },
+		  {
+			"title": "RxWeb 响应式表单验证器",
+			"content": "RxWeb 响应式表单验证器为基于验证器的响应式表单、基于模型的响应式表单和模板驱动的表单提供了所有类型的复杂、条件化、跨字段和动态的验证。",
+			"url": "https://www.rxweb.io/"
+		  }
+		]
+	  },
+	  {
+		"title": "UI 组件",
+		"list": [
+		  {
+			"title": "ag-Grid",
+			"content": "具有企业风格特性的 Angular 数据网格，例如排序、过滤、自定义渲染、编辑、分组、聚合和透视。",
+			"url": "https://www.ag-grid.com/best-angular-2-data-grid/"
+		  },
+		  {
+			"title": "Alyle UI",
+			"content": "最小化设计，一组用于 Angular 的组件。",
+			"url": "https://alyle-ui.firebaseapp.com/"
+		  },
+		  {
+			"title": "Amexio - Angular 扩展",
+			"content": "Amexio 是一套由 HTML5 和 CSS3 支持的丰富的 Angular 组件，用于响应式 Web 设计和 80 多种内置的 Material Design 主题。 Amexio 有 3 个版本，标准版、企业版和创意版。标准版由基本的 UI 组件组成，其中包括网格、选项卡、表单输入等。企业版由日历、树形选项卡、社交媒体登录（Facebook，GitHub，Twitter 等）组成，而创意版则专注于构建美观的网站。具有 200 多个组件/功能。所有版本都是基于 Apache 2 许可证的开源和免费版本。",
+			"url": "https://amexio.tech/"
+		  },
+		  {
+			"title": "Angular & Material Design 2.0 for Bootstrap 5",
+			"content": "Free components, templates & plugins for the latest Bootstrap 5 styled in accordance with Material Design 2.0 (guidelines introduced in 2020)",
+			"url": "https://mdbootstrap.com/docs/b5/angular/"
+		  },
+		  {
+			"title": "Angular & Material Design for Bootstrap 4",
+			"content": "Free components, templates & plugins for the latest Bootstrap 4 styled in accordance with Material Design (guidelines introduced in 2015)",
+			"url": "https://mdbootstrap.com/docs/angular/"
+		  },
+		  {
+			"title": "Angular Material",
+			"content": "Angular 的 Material Design 组件库",
+			"url": "https://material.angular.io/"
+		  },
+		  {
+			"title": "Angular UI 工具包",
+			"content": "Angular UI Toolkit：115 个专业维护的 UI 组件，包括健壮的网格、图表等等。可免费试用并能更快地构建 Angular 应用。",
+			"url": "https://www.angular-ui-tools.com/"
+		  },
+		  {
+			"title": "Angular-Slickgrid",
+			"content": "Angular-SlickGrid 是具有 Bootstrap 3,4 主题的快速、可自定义的 SlickGrid 数据网格库的包装",
+			"url": "https://github.com/ghiscoding/Angular-Slickgrid/"
+		  },
+		  {
+			"title": "供 Angular 使用的 Ant Design Mobile（ng-zorro-antd-mobile）",
+			"content": "一组基于 Ant Design Mobile 和 Angular 的企业级移动 UI 组件",
+			"url": "http://ng.mobile.ant.design/#/docs/introduce/en/"
+		  },
+		  {
+			"title": "供 Angular 使用的 Ant Design（ng-zorro-antd）",
+			"content": "一组基于 Ant Design 和 Angular 的企业级 UI 组件",
+			"url": "https://ng.ant.design/docs/introduce/en/"
+		  },
+		  {
+			"title": "Awade Jigsaw（中文）",
+			"content": "Jigsaw 提供了一组基于 Angular 的 Web 组件。它支持中兴通讯大数据产品（ <https://www.zte.com.cn> ）的所有应用程序的开发。",
+			"url": "https://jigsaw-zte.gitee.io/"
+		  },
+		  {
+			"title": "Blox Material",
+			"content": "轻量级的 Angular Material Design 库，基于 Google 的 Web Material 组件",
+			"url": "https://github.com/src-zone/material/"
+		  },
+		  {
+			"title": "Carbon Design 的 Angular 组件库",
+			"content": "IBM 的 Carbon Design System 的 Angular 实现。",
+			"url": "https://angular.carbondesignsystem.com/"
+		  },
+		  {
+			"title": "Clarity Design System",
+			"content": "让 UX 准则、HTML/CSS 框架和 Angular 组件一起工作，以创造出非凡的体验",
+			"url": "https://vmware.github.io/clarity/"
+		  },
+		  {
+			"title": "DevExtreme",
+			"content": "50 多个 UI 组件，包括数据网格、数据透视网格、调度器、图表、编辑器、地图和其他多功能控件，用于为触摸设备和传统台式机创建高响应性的 Web 应用程序。",
+			"url": "https://js.devexpress.com/Overview/Angular/"
+		  },
+		  {
+			"title": "Essential JS 2",
+			"content": "Essential JS 2 for Angular 是基于现代 TypeScript 的真正 Angular 组件的集合。它支持预先（AOT）编译和摇树优化。所有组件都是从零开始开发的，从而使其轻巧、响应迅速、模块化且对触控友好。",
+			"url": "https://www.syncfusion.com/products/angular-js2/"
+		  },
+		  {
+			"title": "FancyGrid",
+			"content": "具有图表集成和企业服务器通信功能的 Angular 网格库。",
+			"url": "https://fancygrid.com/docs/getting-started/angular/"
+		  },
+		  {
+			"title": "Ignite UI for Angular",
+			"content": "Ignite UI for Angular 是用于构建现代 Web 应用程序的无依赖 Angular 工具包。",
+			"url": "https://www.infragistics.com/products/ignite-ui-angular?utm_source=angular.io&utm_medium=Referral&utm_campaign=Angular/"
+		  },
+		  {
+			"title": "jQWidgets",
+			"content": "Angular UI 组件，包括数据网格、树形网格、多维网格、调度器、图表、编辑器和多种功能的组件",
+			"url": "https://www.jqwidgets.com/angular/"
+		  },
+		  {
+			"title": "Kendo UI",
+			"content": "用 TypeScript 编写的 Angular UI 组件的专业级库，其中包括我们的数据网格、TreeView、图表、编辑器、下拉框、DatePickers 等。功能包括支持 AOT 编译、支持高性能的摇树优化、支持本地化和无障碍性。",
+			"url": "https://www.telerik.com/kendo-angular-ui/"
+		  },
+		  {
+			"title": "Material 社区组件",
+			"content": "社区开发的一些 Material 组件",
+			"url": "https://github.com/tiaguinho/material-community-components/"
+		  },
+		  {
+			"title": "material-dayjs-adapter",
+			"content": "@ angular/material 的 DateAdapter 的 DayJS 实现，其包比相应的 MomentJS 版小。",
+			"url": "https://www.npmjs.com/package/@tabuckner/material-dayjs-adapter/"
+		  },
+		  {
+			"title": "Mosaic - Angular UI 组件",
+			"content": "基于 Angular 的正面技术 UI 组件",
+			"url": "https://github.com/positive-js/mosaic/"
+		  },
+		  {
+			"title": "Nebular",
+			"content": "为你的下一个 Angular 应用程序准备的主题体系、UI 组件、身份验证和安全性。",
+			"url": "https://akveo.github.io/nebular/"
+		  },
+		  {
+			"title": "ng-bootstrap",
+			"content": "Angular UI Bootstrap 库的 Angular 版本。该库是使用 Bootstrap 4 CSS 框架在 Typescript 中从头开始构建的。",
+			"url": "https://ng-bootstrap.github.io/"
+		  },
+		  {
+			"title": "ng-lightning",
+			"content": "Lightning 设计体系的原生 Angular 组件和指令",
+			"url": "https://ng-lightning.github.io/ng-lightning/#/"
+		  },
+		  {
+			"title": "NGX 骨架装载器",
+			"content": "NGX Skeleton Loader 是一种轻巧且 A11Y 友好的解决方案，用于快速加载可自动适配 Angular 应用程序的骨架。",
+			"url": "https://www.npmjs.com/package/ngx-skeleton-loader/"
+		  },
+		  {
+			"title": "ngx-bootstrap",
+			"content": "Bootstrap 的原生 Angular 指令",
+			"url": "https://valor-software.com/ngx-bootstrap/#/"
+		  },
+		  {
+			"title": "ngx-smart-modal",
+			"content": "Angular 智能、轻便、快速的模态框处理程序，可随时随地管理模态框和数据。",
+			"url": "https://biig-io.github.io/ngx-smart-modal/"
+		  },
+		  {
+			"title": "Onsen UI",
+			"content": "具有 Angular 和 AngularJS 绑定的混合式移动应用的 UI 组件。",
+			"url": "https://onsen.io/v2/"
+		  },
+		  {
+			"title": "Prime Faces",
+			"content": "PrimeNG 是 Angular 的富 UI 组件集合",
+			"url": "https://www.primefaces.org/primeng/"
+		  },
+		  {
+			"title": "Sencha for Angular",
+			"content": "使用 115+ 个预构建的 UI 组件更快地构建现代 Web 应用程序。免费试用并立即下载。",
+			"url": "https://www.sencha.com/products/extangular/"
+		  },
+		  {
+			"title": "Simple Quality UI",
+			"content": "Simple Quality UI（SQ-UI）是一种灵活且易于自定义的 UI 工具包，旨在以尽可能少的开销提供最大的效率。它严格遵守“供开发人员使用，由开发人员创造”的思想，每个新的特性发行版都包含使用它的开发人员所要求的功能。",
+			"url": "https://sq-ui.github.io/ng-sq-ui/#/"
+		  },
+		  {
+			"title": "Smart Web 组件库",
+			"content": "Angular 的 Web 组件。一些无依赖的 Angular 组件，用于构建现代且移动友好的 Web 应用程序",
+			"url": "https://www.htmlelements.com/angular/"
+		  },
+		  {
+			"title": "Taiga UI",
+			"content": "Taiga UI is fully-treeshakable Angular UI Kit consisting of multiple base libraries and several add-ons. We have 130+ components, 100+ directives, dozens of tokens, utils and tools. They are easily customizable and well engineered.",
+			"url": "https://taiga-ui.dev/"
+		  },
+		  {
+			"title": "Truly UI",
+			"content": "TrulyUI 是一个 Angular UI 框架，它是使用世界上最先进的技术为基于 Web 组件的桌面应用程序专门开发的。",
+			"url": "https://truly-ui.com/"
+		  },
+		  {
+			"title": "Vaadin",
+			"content": "受 Material Design 启发的用于构建出色的 Web 应用程序的 UI 组件库。适用于手机和台式机。",
+			"url": "https://vaadin.com/elements/"
+		  },
+		  {
+			"title": "Wijmo",
+			"content": "具有最完整的 Angular 支持的高性能 UI 控件。 Wijmo 的控件全部用 TypeScript 编写，并且具有零依赖性。 FlexGrid 控件包括完整的声明性标记语言，包括单元格模板。",
+			"url": "https://www.grapecity.com/wijmo/"
+		  }
+		]
+	  },
+	  {
+		"title": "跨平台开发",
+		"list": [
+		  {
+			"title": "Electron",
+			"content": "Electron 平台 上的 Angular。",
+			"url": "https://github.com/maximegris/angular-electron/"
+		  },
+		  {
+			"title": "Ionic",
+			"content": "Ionic 提供了一个针对移动设备优化过的 HTML、CSS 和 JS 组件库和工具库，用于构建高度互动的原生和渐进式 Web 应用程序。",
+			"url": "https://ionicframework.com/docs/"
+		  },
+		  {
+			"title": "NativeScript",
+			"content": "NativeScript 能让你使用 Angular 和 TypeScript 构建跨平台、本机 iOS 和 Android 应用程序。通过 JavaScript 以及对 NPM、CocoaPods 和 Gradle 中包的复用，可 100％访问原生 API。开源并得到 Telerik 的支持。",
+			"url": "https://docs.nativescript.org/angular/start/introduction/"
+		  }
+		]
+	  }
+	]
+  },
+  {
+	"category": "教育",
+	"resources": [
+	  {
+		"title": "书籍",
+		"list": [
+		]
+	  }
+	]
+  },
+  {
+	"category": "社区",
+	"resources": [
+	  {
+		"title": "社区作品",
+		"list": [
+		]
+	  }
+	]
+  }
+]

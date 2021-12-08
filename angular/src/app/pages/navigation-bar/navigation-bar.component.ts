@@ -78,6 +78,10 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 		return route
 	}
 
+	trackByFn(index: number, item: [showSidebar: boolean, link: Link]) {
+		return item[1].title
+	}
+
 	/**
 	 * 获取导航菜单
 	 * @private

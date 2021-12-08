@@ -13,7 +13,7 @@
 	</a>
 	<nav>
 		<ul>
-			<li *ngFor='let menu of menus'>
+			<li *ngFor='let menu of menus; trackBy: trackByFn'>
 				<div *ngIf='menu[1].isAppRouteLink; then aRouterLink else aHref'></div>
 				<ng-template #aRouterLink>
 					<a
