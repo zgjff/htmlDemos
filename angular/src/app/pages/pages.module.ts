@@ -6,10 +6,11 @@ import { FooterComponent } from './footer/footer.component'
 import { FeaturesComponent } from './features/features.component'
 import { RouterModule } from '@angular/router';
 import { TitleHeaderComponent } from './title-header/title-header.component';
-import { ResourcesComponent } from './resources/resources.component'
+import { ResourcesComponent } from './resources/resources.component';
+import { EventsComponent } from './events/events.component'
 
 @NgModule({
-	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent, ResourcesComponent],
+	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent, ResourcesComponent, EventsComponent],
 	imports: [ShareModule, RouterModule],
 	exports: [FooterComponent, NavigationBarComponent]
 })

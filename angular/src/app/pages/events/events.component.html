@@ -1,0 +1,33 @@
+<app-title-header title='EVENTS'></app-title-header>
+<article>
+	<h2>Where we'll be presenting:</h2>
+	<p>We don't have any upcoming speaking engagements at the moment.</p>
+	<p>Until something comes up, make sure you check our
+		<a href='https://www.youtube.com/angular/' target='_blank'> YouTube channel </a>and follow us on
+		<a href='https://twitter.com/angular/' target='_blank'> social media</a>.
+	</p>
+	<p>If you want us to be part of your event reach out on
+		<a href='mailto:devrel@angular.io/' target='_blank'> devrel@angular.io</a>!
+	</p>
+	<br>
+	<h2>Where we already presented:</h2>
+	<!--table列表-->
+	<table>
+		<!--头-->
+		<thead>
+		<tr>
+			<th>EVENT</th>
+			<th>LOCATION</th>
+			<th>DATE</th>
+		</tr>
+		</thead>
+		<!--内容-->
+		<tbody>
+		<tr *ngFor='let event of events'>
+			<th><a>{{event.title}}</a></th>
+			<td>{{event.location}}</td>
+			<td>{{event.date}}</td>
+		</tr>
+		</tbody>
+	</table>
+</article>

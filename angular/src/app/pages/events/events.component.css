@@ -1,0 +1,73 @@
+article {
+	color: white;
+	margin: 0 auto;
+	max-width: 62.5em;
+	padding: 1.5rem 3rem 3rem 3rem;
+}
+
+h2 {
+	border-top: 0;
+	font-size: 3.2rem;
+	font-weight: 500;
+	margin-bottom: 0;
+	margin-top: 2rem;
+	padding-top: 0;
+}
+
+p, a {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 3.2rem;
+}
+
+a {
+	color: #7fc9ff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+	border-radius: 2px;
+	border-spacing: 0;
+	box-shadow: 0 2px 2px #6e6e6e3d, 0 0 2px #ffffff1f;
+	margin: 24px 0;
+	width: 100%;
+}
+
+
+table > thead > tr > th {
+	border-bottom: 1px solid #444444;
+}
+
+th {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 2.8rem;
+	padding: 8px 24px;
+	text-align: left;
+	text-transform: uppercase;
+	width: 33%;
+}
+
+tbody > tr > th {
+	border-right: 1px solid #444444;
+}
+
+table tbody > tr > th, table tbody > tr > td {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	padding: 16px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tbody > tr {
+	border-bottom: 1px solid #444444;
+	display: table-row;
+}
+
