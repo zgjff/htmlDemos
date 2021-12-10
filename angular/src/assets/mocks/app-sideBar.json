@@ -1,0 +1,938 @@
+[
+  {
+	"title": "介绍",
+	"route": "/docs",
+	"children": [],
+	"open": false
+  },
+  {
+	"title": "快速上手",
+	"route": null,
+	"children": [
+	  {
+		"title": "什么是 Angular？",
+		"route": "/guide/what-is-angular",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "试一试",
+		"route": null,
+		"children": [
+		  {
+			"title": "快速上手",
+			"route": "/start",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "添加导航",
+			"route": "/start/start-routing",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "管理数据",
+			"route": "/start/start-data",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "使用表单进行用户输入",
+			"route": "/start/start-forms",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "部署应用",
+			"route": "/start/start-deployment",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "搭建环境",
+		"route": "/guide/setup-local",
+		"children": [],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "理解Angular",
+	"route": null,
+	"children": [
+	  {
+		"title": "组件",
+		"route": null,
+		"children": [
+		  {
+			"title": "概述",
+			"route": "/guide/component-overview",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "组件生命周期",
+			"route": "/guide/lifecycle-hooks",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "视图封装",
+			"route": "/guide/view-encapsulation",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "组件交互",
+			"route": "/guide/component-interaction",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "组件样式",
+			"route": "/guide/component-styles",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "在父子组件、指令之间共享数据",
+			"route": "/guide/inputs-outputs",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "内容投影",
+			"route": "/guide/content-projection",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "动态组件",
+			"route": "/guide/dynamic-component-loader",
+			"children": [
+			],
+			"open": false
+		  },
+		  {
+			"title": "Angular 元素",
+			"route": "/guide/elements",
+			"children": [
+			],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "模版",
+		"route": null,
+		"children": [
+		  {
+			"title": "介绍",
+			"route": "/guide/template-syntax",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "文本插值",
+			"route": "/guide/interpolation",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "模板语句",
+			"route": "/guide/template-statements",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "管道",
+			"route": "/guide/pipes",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "属性绑定",
+			"route": "/guide/property-binding",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "属性(Attribute)、类、样式绑定",
+			"route": "/guide/attribute-binding",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "事件绑定",
+			"route": "/guide/event-binding",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "双向绑定",
+			"route": "/guide/two-way-binding",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "模板引用变量",
+			"route": "/guide/template-reference-variables",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "SVG 作为模板",
+			"route": "/guide/svg-in-templates",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "指令",
+		"route": null,
+		"children": [
+		  {
+			"title": "内置指令",
+			"route": "/guide/built-in-directives",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "属性型指令",
+			"route": "/guide/attribute-directives",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "结构型指令",
+			"route": "/guide/structural-directives",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "依赖注入",
+		"route": null,
+		"children": [
+		  {
+			"title": "Angular依赖注入",
+			"route": "/guide/dependency-injection",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "DI提供者",
+			"route": "/guide/dependency-injection-providers",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "开发指南",
+	"route": null,
+	"children": [
+	  {
+		"title": "路由与导航",
+		"route": null,
+		"children": [
+		  {
+			"title": "概述",
+			"route": "/guide/routing-overview",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "常见路由任务",
+			"route": "/guide/router",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "教程: 在单页面应用中导航",
+			"route": "/guide/router-tutorial",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "教程: 创建自定义路由匹配器",
+			"route": "/guide/routing-with-urlmatcher",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "教程: 为英雄之旅添加路由支持",
+			"route": "/guide/router-tutorial-toh",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "路由器参考手册",
+			"route": "/guide/router-reference",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "表单",
+		"route": null,
+		"children": [
+		  {
+			"title": "介绍",
+			"route": "/guide/forms-overview",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "响应式表单",
+			"route": "/guide/reactive-forms",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "验证表单输入",
+			"route": "/guide/form-validation",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "构建动态表单",
+			"route": "/guide/dynamic-form",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "HTTP客户端",
+		"route": "/guide/http",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "测试",
+		"route": null,
+		"children": [
+		  {
+			"title": "测试介绍",
+			"route": "/guide/testing",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "代码覆盖率",
+			"route": "/guide/testing-code-coverage",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "测试服务",
+			"route": "/guide/testing-services",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "测试组件的基础知识",
+			"route": "/guide/testing-components-basics",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "组件测试场景",
+			"route": "/guide/testing-components-scenarios",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "测试属性型指令",
+			"route": "/guide/testing-attribute-directives",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "测试管道",
+			"route": "/guide/testing-pipes",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "调试测试代码",
+			"route": "/guide/test-debugging",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "测试实用工具 API",
+			"route": "/guide/testing-utility-apis",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "国际化",
+		"route": null,
+		"children": [
+		  {
+			"title": "概述",
+			"route": "/guide/i18n-overview",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "常见的国际化任务",
+			"route": null,
+			"children": [
+			  {
+				"title": "常见的国际化任务",
+				"route": "/guide/i18n-common",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "添加本地化包",
+				"route": "/guide/i18n-common-add-package",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "通过 ID 引用语言环境",
+				"route": "/guide/i18n-common-locale-id",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "根据语言环境格式化数据",
+				"route": "/guide/i18n-common-format-data-locale",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "准备翻译模板",
+				"route": "/guide/i18n-common-prepare",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "处理翻译文件",
+				"route": "/guide/i18n-common-translation-files",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "将翻译合并到应用中",
+				"route": "/guide/i18n-common-merge",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "部署多个语言环境",
+				"route": "/guide/i18n-common-deploy",
+				"children": [],
+				"open": false
+			  }
+			],
+			"open": false
+		  },
+		  {
+			"title": "Angular 应用示例",
+			"route": "/guide/i18n-example",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "可选的国际化实践",
+			"route": null,
+			"children": [
+			  {
+				"title": "可选的国际化实践",
+				"route": "/guide/i18n-optional",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "手动设置源语言环境",
+				"route": "/guide/i18n-optional-manual-source-locale",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "导入语言环境数据的全局变量",
+				"route": "/guide/i18n-optional-import-global-variants",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "使用自定义 ID 管理已标记文本",
+				"route": "/guide/i18n-optional-manage-marked-text",
+				"children": [],
+				"open": false
+			  }
+			],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "动画",
+		"route": null,
+		"children": [
+		  {
+			"title": "介绍",
+			"route": "/guide/animations",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "转场与触发器",
+			"route": "/guide/transition-and-triggers",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "复杂序列",
+			"route": "/guide/complex-animation-sequences",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "可复用动画",
+			"route": "/guide/reusable-animations",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "路由转场动画",
+			"route": "/guide/route-animations",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "Service Worker 和 PWA",
+		"route": null,
+		"children": [
+		  {
+			"title": "介绍",
+			"route": "/guide/service-worker-intro",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "入门",
+			"route": "/guide/service-worker-getting-started",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "应用外壳",
+			"route": "/guide/app-shell",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "Service Worker 通信",
+			"route": "/guide/service-worker-communications",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "Service Worker 通知",
+			"route": "/guide/service-worker-notifications",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "生产环境下的 Service Worker",
+			"route": "/guide/service-worker-devops",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "Service Worker 配置",
+			"route": "/guide/service-worker-config",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "Web Worker",
+		"route": "/guide/web-worker",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "服务端渲染",
+		"route": "/guide/universal",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "预渲染(Prerender)",
+		"route": "/guide/prerendering",
+		"children": [],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "最佳实践",
+	"route": null,
+	"children": [
+	  {
+		"title": "安全",
+		"route": "/guide/security",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "无障碍性",
+		"route": "/guide/accessibility",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "保持最新",
+		"route": "/guide/updating",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "属性绑定的最佳实践",
+		"route": "/guide/property-binding-best-practices",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "惰性加载特性模块",
+		"route": "/guide/lazy-loading-ngmodules",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "为库准备的轻量级注入令牌",
+		"route": "/guide/lightweight-injection-tokens",
+		"children": [],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "Angular 工具",
+	"route": null,
+	"children": [
+	  {
+		"title": "开发工作流",
+		"route": "/guide/security",
+		"children": [
+		  {
+			"title": "部署应用",
+			"route": "/guide/deployment",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "AOT 编译器",
+			"route": "/guide/deployment",
+			"children": [
+			  {
+				"title": "预先编译",
+				"route": "/guide/aot-compiler",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "Angular 编译器选项",
+				"route": "/guide/angular-compiler-options",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "AOT 元数据错误",
+				"route": "/guide/aot-metadata-errors",
+				"children": [],
+				"open": false
+			  },
+			  {
+				"title": "模板类型检查",
+				"route": "/guide/template-typecheck",
+				"children": [],
+				"open": false
+			  }
+			],
+			"open": false
+		  },
+		  {
+			"title": "构建与本地服务器",
+			"route": "/guide/build",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "CLI 构建器",
+		"route": "/guide/cli-builder",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "语言服务",
+		"route": "/guide/language-service",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "开发者工具",
+		"route": "/guide/devtools",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "原理图",
+		"route": null,
+		"children": [
+		  {
+			"title": "原理图概述",
+			"route": "/guide/schematics",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "创作原理图",
+			"route": "/guide/schematics-authoring",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "库的原理图",
+			"route": "/guide/schematics-for-libraries",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "教程",
+	"route": null,
+	"children": [
+	  {
+		"title": "英雄之旅",
+		"route": null,
+		"children": [
+		  {
+			"title": "介绍",
+			"route": "/tutorial",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "创建项目",
+			"route": "/tutorial/toh-pt0",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "1.英雄编辑器",
+			"route": "/tutorial/toh-pt1",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "2.显示列表",
+			"route": "/tutorial/toh-pt2",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "3.创建特性组件",
+			"route": "/tutorial/toh-pt3",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "4.添加服务",
+			"route": "/tutorial/toh-pt4",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "5.添加导航",
+			"route": "/tutorial/toh-pt5",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "6.从服务端获取数据",
+			"route": "/tutorial/toh-pt6",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "构建模板驱动表单",
+		"route": "/guide/forms",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "Angular 库",
+		"route": null,
+		"children": [
+		  {
+			"title": "库概述",
+			"route": "/guide/libraries",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "使用已发布的库",
+			"route": "/guide/using-libraries",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "创建库",
+			"route": "/guide/creating-libraries",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  }
+	],
+	"open": false
+  },
+  {
+	"title": "发布信息",
+	"route": null,
+	"children": [
+	  {
+		"title": "发布实践",
+		"route": "/guide/releases",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "路线图",
+		"route": "/guide/roadmap",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "浏览器支持",
+		"route": "/guide/browser-support",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "升级至版本 12",
+		"route": null,
+		"children": [
+		  {
+			"title": "概述",
+			"route": "/guide/updating-to-version-12",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "Ivy 兼容性指南",
+			"route": "/guide/ivy-compatibility",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "迁移: 旧版本地化 ID",
+			"route": "/guide/migration-legacy-message-id",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  },
+	  {
+		"title": "弃用清单",
+		"route": "/guide/deprecations",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "Angular Ivy",
+		"route": "/guide/ivy",
+		"children": [],
+		"open": false
+	  },
+	  {
+		"title": "从 AngularJS 升级",
+		"route": null,
+		"children": [
+		  {
+			"title": "升级说明",
+			"route": "/guide/upgrade",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "搭建升级环境",
+			"route": "/guide/upgrade-setup",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "更关注性能的升级方式",
+			"route": "/guide/upgrade-performance",
+			"children": [],
+			"open": false
+		  },
+		  {
+			"title": "AngularJS 与 Angular 的概念对照",
+			"route": "/guide/ajs-quick-reference",
+			"children": [],
+			"open": false
+		  }
+		],
+		"open": false
+	  }
+	],
+	"open": false
+  }
+]

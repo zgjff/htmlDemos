@@ -1,0 +1,97 @@
+:host {
+	background-color: #303030;
+	border-right: 1px solid #444444;
+	box-sizing: border-box;
+	display: block;
+	height: 100vh;
+	overflow-y: scroll;
+	padding-top: 64px;
+	position: fixed;
+	width: 270px;
+	z-index: 2;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.box.box1 {
+	margin-top: 16px;
+}
+
+.line {
+	background-color: transparent;
+	border-bottom: 1px solid white;
+	margin: 4px 20px 0;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	align-items: center;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 2px 0 0;
+	transition: background-color .2s linear;
+}
+
+.row:hover {
+	background-color: rgb(62, 62, 62);
+	color: #7fc9ff;
+}
+
+
+.rightArrowBox {
+	background-repeat: no-repeat;
+	display: inline-block;
+	fill: currentColor;
+	height: 24px;
+	padding-right: 8px;
+	transition: transform .2s linear;
+	width: 24px;
+}
+
+.rightArrowBox.needTransform {
+	transform: rotate(90deg);
+}
+
+p {
+	align-items: center;
+	color: currentColor;
+	display: flex;
+	flex-grow: 1;
+	font-size: 1.6rem;
+	font-weight: 300;
+	justify-content: space-between;
+	line-height: 2.8rem;
+	margin: 0;
+	padding: 8px 0 8px 20px;
+	text-align: left;
+	transition: background-color .2s;
+}
+
+p.p2 {
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	padding-left: 36px;
+}
+
+p.p3 {
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	padding-left: 44px;
+}
+
+p.p4 {
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	padding-left: 54px;
+}

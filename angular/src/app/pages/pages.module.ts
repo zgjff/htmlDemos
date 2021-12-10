@@ -7,10 +7,12 @@ import { FeaturesComponent } from './features/features.component'
 import { RouterModule } from '@angular/router';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { ResourcesComponent } from './resources/resources.component';
-import { EventsComponent } from './events/events.component'
+import { EventsComponent } from './events/events.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { DocsComponent } from './docs/docs.component'
 
 @NgModule({
-	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent, ResourcesComponent, EventsComponent],
+	declarations: [HomeComponent, NavigationBarComponent, FooterComponent, FeaturesComponent, TitleHeaderComponent, ResourcesComponent, EventsComponent, SidebarComponent, DocsComponent],
 	imports: [ShareModule, RouterModule],
 	exports: [FooterComponent, NavigationBarComponent]
 })

@@ -1,0 +1,68 @@
+<div class='box box1'>
+	<!--第一级-->
+	<div *ngFor='let firstBar of sideBars; trackBy: trackByFn' class='section'>
+		<div (click)='onClickSideBar(firstBar)' class='row'>
+			<div *ngIf='firstBar.children.length > 0'>
+				<svg
+					[class.needTransform]='firstBar.open' class='rightArrowBox' focusable='false' viewBox='0 0 24 24'
+					xmlns='http://www.w3.org/2000/svg'
+				>
+					<path d='M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z'></path>
+				</svg>
+			</div>
+			<p>{{firstBar.title}}</p>
+		</div>
+		<!--第二级-->
+		<div *ngIf='firstBar.open && firstBar.children.length > 0' class='box'>
+			<div *ngFor='let secondBar of firstBar.children; trackBy: trackByFn' class='section'>
+				<div (click)='onClickSideBar(secondBar)' class='row'>
+					<div *ngIf='secondBar.children.length > 0'>
+						<svg
+							[class.needTransform]='secondBar.open' class='rightArrowBox' focusable='false'
+							viewBox='0 0 24 24'
+							xmlns='http://www.w3.org/2000/svg'
+						>
+							<path d='M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z'></path>
+						</svg>
+					</div>
+					<p class='p2'>{{secondBar.title}}</p>
+				</div>
+				<!--第三级-->
+				<div *ngIf='secondBar.open && secondBar.children.length > 0' class='box'>
+					<div *ngFor='let thirdBar of secondBar.children; trackBy: trackByFn' class='section'>
+						<div (click)='onClickSideBar(thirdBar)' class='row'>
+							<div *ngIf='thirdBar.children.length > 0'>
+								<svg
+									[class.needTransform]='thirdBar.open' class='rightArrowBox' focusable='false'
+									viewBox='0 0 24 24'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path d='M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z'></path>
+								</svg>
+							</div>
+							<p class='p3'>{{thirdBar.title}}</p>
+						</div>
+						<!--第四级-->
+						<div *ngIf='thirdBar.open && thirdBar.children.length > 0' class='box'>
+							<div *ngFor='let fourBar of thirdBar.children; trackBy: trackByFn' class='section'>
+								<div (click)='onClickSideBar(fourBar)' class='row'>
+									<div *ngIf='fourBar.children.length > 0'>
+										<svg
+											[class.needTransform]='fourBar.open' class='rightArrowBox' focusable='false'
+											viewBox='0 0 24 24'
+											xmlns='http://www.w3.org/2000/svg'
+										>
+											<path d='M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z'></path>
+										</svg>
+									</div>
+									<p class='p4'>{{fourBar.title}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='line'></div>
+</div>

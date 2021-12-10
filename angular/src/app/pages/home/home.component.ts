@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { AngularDesc } from '../../services/models/angular-desc'
 import { HomeService } from '../../services/home.service'
-import { Title } from '@angular/platform-browser'
 
 @Component({
 	selector: 'app-home',
@@ -15,9 +14,7 @@ import { Title } from '@angular/platform-browser'
 export class HomeComponent implements OnInit {
 	angularDesc: AngularDesc[] = []
 
-	constructor(private homeService: HomeService, private title: Title) {
-		this.title.setTitle('Angular')
-	}
+	constructor(private homeService: HomeService) {}
 
 	ngOnInit() {
 		this.getAngularDescList()

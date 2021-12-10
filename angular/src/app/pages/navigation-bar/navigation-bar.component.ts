@@ -46,14 +46,9 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 			)
 			.subscribe((value) => {
 				const urls = value.snapshot.url
-				if (urls.length == 0) {
-					this.canShowSidebar = false
-					this.isFixed = false
-					return
-				}
-				const path = urls[0].path
-				this.canShowSidebar = path === 'docs'
-				this.isFixed = true
+				this.isFixed = urls.length > 0
+				const data = value.snapshot.data
+				this.canShowSidebar = data['showSidebar']
 			})
 	}
 

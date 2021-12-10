@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
+import { HtmTitleService } from './core/htm-title.service'
 
 @Component({
 	selector: 'app-root',
@@ -8,6 +9,12 @@ import { Component } from '@angular/core'
 		<app-footer></app-footer>
 	`
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 	title = 'angular'
+
+	constructor(private htmTitleService: HtmTitleService) {}
+
+	ngOnInit() {
+		this.htmTitleService.setHtmlTitle()
+	}
 }

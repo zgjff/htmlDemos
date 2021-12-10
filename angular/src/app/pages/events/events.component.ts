@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core'
-import { Title } from '@angular/platform-browser'
 import { EventsService } from '../../services/events.service'
 import { AppEvents } from '../../services/models/app-events'
 
@@ -18,9 +17,7 @@ export class EventsComponent implements OnInit {
 	 */
 	events: AppEvents[] = []
 
-	constructor(private eventsService: EventsService, private title: Title) {
-		title.setTitle('Angular - EVENTS')
-	}
+	constructor(private eventsService: EventsService) {}
 
 	ngOnInit() {
 		this.loadEvents()

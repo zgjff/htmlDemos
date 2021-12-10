@@ -1,0 +1,10 @@
+:host {
+	display: block;
+}
+
+.content {
+	box-sizing: border-box;
+	color: white;
+	margin-left: 270px;
+	padding-top: 64px;
+}
