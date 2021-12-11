@@ -1,0 +1,35 @@
+.container {
+	align-items: stretch;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.container.keepNavigationBarSpace {
+	margin-top: 64px;
+}
+
+.sidebar {
+	background-color: #303030;
+	border-right: 1px solid #444444;
+	box-sizing: border-box;
+	display: block;
+	flex: 1;
+	height: 100vh;
+	margin: 0;
+	overflow-y: scroll;
+	padding-bottom: 64px;
+	position: fixed;
+	width: 270px;
+	z-index: 2;
+}
+
+.content {
+	flex-grow: 1;
+	margin-left: 270px;
+	transition: margin-left .35s linear;
+}
+
+.content.moveToEdge {
+	margin-left: 0;
+}

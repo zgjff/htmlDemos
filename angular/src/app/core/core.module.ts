@@ -8,6 +8,7 @@ import { ShareModule } from '../share/share.module'
 import { AppRoutingModule } from '../app-routing/app-routing.module'
 import { FooterComponent } from '../pages/footer/footer.component'
 import { NavigationBarComponent } from '../pages/navigation-bar/navigation-bar.component'
+import { SidebarComponent } from '../pages/sidebar/sidebar.component'
 
 @NgModule({
 	declarations: [],
@@ -20,7 +21,13 @@ import { NavigationBarComponent } from '../pages/navigation-bar/navigation-bar.c
 		PagesModule,
 		AppRoutingModule
 	],
-	exports: [ShareModule, AppRoutingModule, FooterComponent, NavigationBarComponent]
+	exports: [
+		ShareModule,
+		AppRoutingModule,
+		FooterComponent,
+		NavigationBarComponent,
+		SidebarComponent
+	]
 })
 
 /**

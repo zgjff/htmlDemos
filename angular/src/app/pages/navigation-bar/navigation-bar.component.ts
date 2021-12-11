@@ -1,9 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core'
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core'
 import { Link } from '../../services/models/link'
 import { NavigationBarService } from '../../services/navigation-bar.service'
 import { PlatformInfo } from '../../services/models/platform-info'
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router'
 import { filter, map, Subscription } from 'rxjs'
+import { ExpandOrShrinkSidebarService } from '../../services/expand-or-shrink-sidebar.service'
 
 @Component({
 	selector: 'app-navigation-bar',
@@ -16,13 +17,15 @@ import { filter, map, Subscription } from 'rxjs'
  */
 export class NavigationBarComponent implements OnInit, OnDestroy {
 	/**
-	 * 是否可以显示侧边栏
+	 * 是否可以显示侧边栏信号(外部使用)
 	 */
-	canShowSidebar = false
+	@Output() canShowSidebar = new EventEmitter<boolean>()
+	showSidebar = false
 	/**
-	 * 是否是fixed定位
+	 * 是否是fixed定位信号(外部使用)
 	 */
-	isFixed = false
+	@Output() positionUsingFixed = new EventEmitter<boolean>()
+	fixedPosition = false
 	/**
 	 * 导航菜单
 	 */
@@ -35,6 +38,7 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 
 	constructor(
 		private navigationBarService: NavigationBarService,
+		private expandOrShrinkSidebarService: ExpandOrShrinkSidebarService,
 		private route: ActivatedRoute,
 		private router: Router
 	) {
@@ -46,9 +50,11 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 			)
 			.subscribe((value) => {
 				const urls = value.snapshot.url
-				this.isFixed = urls.length > 0
+				this.fixedPosition = urls.length > 0
+				this.positionUsingFixed.emit(this.fixedPosition)
 				const data = value.snapshot.data
-				this.canShowSidebar = data['showSidebar']
+				this.showSidebar = data['showSidebar']
+				this.canShowSidebar.emit(this.showSidebar)
 			})
 	}
 

@@ -1,16 +1,3 @@
-:host {
-	background-color: #303030;
-	border-right: 1px solid #444444;
-	box-sizing: border-box;
-	display: block;
-	height: 100vh;
-	overflow-y: scroll;
-	padding-top: 64px;
-	position: fixed;
-	width: 270px;
-	z-index: 2;
-}
-
 .box {
 	display: flex;
 	flex-direction: column;
@@ -48,13 +35,12 @@
 	color: #7fc9ff;
 }
 
-
 .rightArrowBox {
 	background-repeat: no-repeat;
 	display: inline-block;
 	fill: currentColor;
 	height: 24px;
-	padding-right: 8px;
+	margin-right: 8px;
 	transition: transform .2s linear;
 	width: 24px;
 }

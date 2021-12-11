@@ -1,0 +1,13 @@
+<app-navigation-bar
+	(canShowSidebar)='onModifyShowSidebar($event)'
+	(positionUsingFixed)='onModifyNavigationBarFixed($event)'
+></app-navigation-bar>
+<div [class.keepNavigationBarSpace]='needKeepNavigationBarSpace' class='container'>
+	<div *ngIf='showSidebar' @moveInOut class='sidebar'>
+		<app-sidebar (clickRouterPath)='onClickRouterPath($event)'></app-sidebar>
+	</div>
+	<div [class.moveToEdge]='!showSidebar' class='content'>
+		<router-outlet></router-outlet>
+	</div>
+</div>
+<app-footer></app-footer>
