@@ -20,7 +20,7 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 	 * 是否可以显示侧边栏信号(外部使用)
 	 */
 	@Output() canShowSidebar = new EventEmitter<boolean>()
-	showSidebar = false
+	showSidebarButton = false
 	/**
 	 * 是否是fixed定位信号(外部使用)
 	 */
@@ -34,6 +34,7 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 	 * 其它平台信息
 	 */
 	platformInfos: PlatformInfo[] = []
+	private showSidebar = false
 	private subscription?: Subscription
 
 	constructor(
@@ -54,6 +55,7 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 				this.positionUsingFixed.emit(this.fixedPosition)
 				const data = value.snapshot.data
 				this.showSidebar = data['showSidebar']
+				this.showSidebarButton = this.showSidebar
 				this.canShowSidebar.emit(this.showSidebar)
 			})
 	}
@@ -70,7 +72,10 @@ export class NavigationBarComponent implements OnInit, OnDestroy {
 	/**
 	 * 点击侧边栏按钮
 	 */
-	onClickSidebarButton() {}
+	onClickSidebarButton() {
+		this.showSidebar = !this.showSidebar
+		this.canShowSidebar.emit(this.showSidebar)
+	}
 
 	rootRoute(route: ActivatedRoute): ActivatedRoute {
 		while (route.firstChild) {

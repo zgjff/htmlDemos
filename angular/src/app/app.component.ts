@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { HtmTitleService } from './core/htm-title.service'
 import { animate, style, transition, trigger } from '@angular/animations'
+import { Router } from '@angular/router'
 
 @Component({
 	selector: 'app-root',
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit {
 	 */
 	needKeepNavigationBarSpace = false
 
-	constructor(private htmTitleService: HtmTitleService) {}
+	constructor(private htmTitleService: HtmTitleService, private router: Router) {}
 
 	ngOnInit() {
 		this.htmTitleService.setHtmlTitle()
@@ -42,5 +43,7 @@ export class AppComponent implements OnInit {
 		this.needKeepNavigationBarSpace = fixed
 	}
 
-	onClickRouterPath(path: string) {}
+	onClickRouterPath(path: string) {
+		this.router.navigate([path]).then()
+	}
 }
