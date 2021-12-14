@@ -1,0 +1,62 @@
+[
+  {
+	"title": "小米商城",
+	"url": "/",
+	"isAppSite": true
+  },
+  {
+	"title": "MIUI",
+	"url": "https://home.miui.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "IoT",
+	"url": "https://iot.mi.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "云服务",
+	"url": "https://i.mi.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "天星数科",
+	"url": "https://airstar.com/home/",
+	"isAppSite": false
+  },
+  {
+	"title": "有品",
+	"url": "https://www.xiaomiyoupin.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "小米开放平台",
+	"url": "https://xiaoai.mi.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "企业团购",
+	"url": "https://qiye.mi.com/",
+	"isAppSite": false
+  },
+  {
+	"title": "资质证照",
+	"url": "https://www.mi.com/aptitude/list?id=88/",
+	"isAppSite": true
+  },
+  {
+	"title": "协议规则",
+	"url": "https://www.mi.com/aptitude/list/",
+	"isAppSite": true
+  },
+  {
+	"title": "下载app",
+	"url": "/",
+	"isAppSite": true
+  },
+  {
+	"title": "智能生活",
+	"url": "https://xiaomishare.mi.com/?from=micom#/",
+	"isAppSite": false
+  }
+]

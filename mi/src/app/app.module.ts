@@ -7,16 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
 import { OverlayModule } from '@angular/cdk/overlay'
+import { SiteWideNavigationBarComponent } from './components/site-wide-navigation-bar/site-wide-navigation-bar.component'
+import { ServicesModule } from './services/services.module'
+import { ShareModule } from './modules/share.module'
+import { ARouterLinkModule } from './directives/a-router-link.module'
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, SiteWideNavigationBarComponent],
 	imports: [
+		ShareModule,
 		BrowserModule,
 		BrowserAnimationsModule,
 		AppRoutingModule,
 		FormsModule,
 		HttpClientModule,
-		OverlayModule
+		OverlayModule,
+		ServicesModule,
+		ARouterLinkModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

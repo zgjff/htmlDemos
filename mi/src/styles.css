@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	background-color: white;
+	font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 1.6rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:host {
+		background-color: white;
+	}
+}
