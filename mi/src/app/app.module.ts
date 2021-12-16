@@ -10,10 +10,11 @@ import { OverlayModule } from '@angular/cdk/overlay'
 import { SiteWideNavigationBarComponent } from './components/site-wide-navigation-bar/site-wide-navigation-bar.component'
 import { ServicesModule } from './services/services.module'
 import { ShareModule } from './modules/share.module'
-import { ARouterLinkModule } from './directives/a-router-link.module'
+import { TabBarComponent } from './components/tab-bar/tab-bar.component'
+import { ARouterLinkModule } from './directives/a-router-link/a-router-link.module'
 
 @NgModule({
-	declarations: [AppComponent, SiteWideNavigationBarComponent],
+	declarations: [AppComponent, SiteWideNavigationBarComponent, TabBarComponent],
 	imports: [
 		ShareModule,
 		BrowserModule,

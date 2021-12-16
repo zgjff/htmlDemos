@@ -1,0 +1,222 @@
+[
+  {
+	"type": "Xiaomi手机",
+	"list": [
+	  {
+		"title": "Xiaomi 11 青春活力版",
+		"img": "",
+		"price": "1999"
+	  },
+	  {
+		"title": "Xiaomi Civi",
+		"img": "",
+		"price": "2599"
+	  },
+	  {
+		"title": "Xiaomi 11 MIX4",
+		"img": "",
+		"price": "4199"
+	  },
+	  {
+		"title": "Xiaomi 11 MIX FOLD",
+		"img": "",
+		"price": "7999"
+	  },
+	  {
+		"title": "Xiaomi 11 Ultra",
+		"img": "",
+		"price": "5499"
+	  },
+	  {
+		"title": "Xiaomi 11 Pro",
+		"img": "",
+		"price": "3999"
+	  }
+	]
+  },
+  {
+	"type": "Redmi 红米",
+	"list": [
+	  {
+		"title": "Redmi Note 11 Pro系列",
+		"img": "",
+		"price": "1799"
+	  },
+	  {
+		"title": "Redmi Note 11 5G",
+		"img": "",
+		"price": "1199"
+	  },
+	  {
+		"title": "Redmi Note 11 4G",
+		"img": "",
+		"price": "999"
+	  },
+	  {
+		"title": "Redmi Note 10 Pro",
+		"img": "",
+		"price": "1499"
+	  },
+	  {
+		"title": "Redmi Note 10 5G",
+		"img": "",
+		"price": "1099"
+	  },
+	  {
+		"title": "K40 游戏增强版",
+		"img": "",
+		"price": "1999"
+	  }
+	]
+  },
+  {
+	"type": "电视",
+	"list": [
+	  {
+		"title": "Redmi智能电视X55 2022",
+		"img": "",
+		"price": "2699"
+	  },
+	  {
+		"title": "Redmi智能电视X65 2022",
+		"img": "",
+		"price": "3499"
+	  },
+	  {
+		"title": "小米电视6 65 OLED",
+		"img": "",
+		"price": "6999"
+	  },
+	  {
+		"title": "小米电视 大师 77 OLED",
+		"img": "",
+		"price": "17999"
+	  },
+	  {
+		"title": "小米透明电视",
+		"img": "",
+		"price": "39999"
+	  },
+	  {
+		"title": "小米电视 大师 65英寸OLED",
+		"img": "",
+		"price": "8999"
+	  }
+	]
+  },
+  {
+	"type": "笔记本",
+	"list": [
+	  {
+		"title": "小米笔记本 Pro14 锐龙版",
+		"img": "",
+		"price": "5499"
+	  },
+	  {
+		"title": "RedmiBook Pro15 增强版",
+		"img": "",
+		"price": "5299"
+	  },
+	  {
+		"title": "小米笔记本Pro X14",
+		"img": "",
+		"price": "7999"
+	  },
+	  {
+		"title": "Redmi G 2021 Intel版",
+		"img": "",
+		"price": "6499"
+	  },
+	  {
+		"title": "Redmi G 2021 Intel版",
+		"img": "",
+		"price": "7999"
+	  },
+	  {
+		"title": "小米笔记本Pro X15",
+		"img": "",
+		"price": "7999"
+	  }
+	]
+  },
+  {
+	"type": "平板",
+	"list": [
+	  {
+		"title": "小米平板5",
+		"img": "",
+		"price": "1999"
+	  },
+	  {
+		"title": "小米平板5 PrO",
+		"img": "",
+		"price": "2499"
+	  }
+	]
+  },
+  {
+	"type": "家电",
+	"list": [
+	  {
+		"title": "米家风冷对开门冰箱483L",
+		"img": "",
+		"price": "2399"
+	  },
+	  {
+		"title": "米家扫拖机器人1T",
+		"img": "",
+		"price": "1999"
+	  },
+	  {
+		"title": "米家互联网洗烘一体机10kg",
+		"img": "",
+		"price": "1899"
+	  },
+	  {
+		"title": "小米净水器S1 800G",
+		"img": "",
+		"price": "2199"
+	  },
+	  {
+		"title": "Redmi全自动波轮洗衣机1A",
+		"img": "",
+		"price": "799"
+	  }
+	]
+  },
+  {
+	"type": "路由器",
+	"list": [
+	  {
+		"title": "小米路由器AX6000",
+		"img": "",
+		"price": "599"
+	  },
+	  {
+		"title": "小米路由器AX9000",
+		"img": "",
+		"price": "1299"
+	  },
+	  {
+		"title": "Redmi路由器AC2100",
+		"img": "",
+		"price": "169"
+	  },
+	  {
+		"title": "小米路由器 Mesh",
+		"img": "",
+		"price": "999"
+	  },
+	  {
+		"title": "小米路由器4A 千兆版",
+		"img": "",
+		"price": "129"
+	  },
+	  {
+		"title": "小米路由器 4C",
+		"img": "",
+		"price": "59"
+	  }
+	]
+  }
+]

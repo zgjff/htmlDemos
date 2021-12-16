@@ -1,12 +1,17 @@
 :host {
 	background-color: #333;
+	display: block;
 	font-size: 1.2rem;
-	justify-content: space-around;
 	line-height: 1.2rem;
 	width: 100vw;
 }
 
-:host, ul {
+.container {
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.container, ul {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
@@ -21,7 +26,6 @@ ul, li, a {
 a {
 	align-items: center;
 	color: #b0b0b0;
-	cursor: pointer;
 	display: flex;
 	text-decoration: none;
 }
@@ -50,7 +54,7 @@ a:hover {
 
 ul:last-child > li:last-child > a:hover {
 	background-color: white;
-	color: orange;
+	color: #ff6700;
 }
 
 span.shopping {

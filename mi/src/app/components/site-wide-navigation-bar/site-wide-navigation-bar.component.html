@@ -1,27 +1,21 @@
-<ul>
-	<!--外站-->
-	<li *ngFor='let website of websites'>
-		<a [needRouterLink]='website.isAppSite' appARouterLink href='{{website.url}}' target='_blank'>
-			<span>{{website.title}}</span>
-		</a>
-	</li>
-	<!--选择国家-->
-	<li>
-		<a (click)='onClickLocation()'><span>Select Location</span></a>
-	</li>
-</ul>
-
-<ul>
-	<li>
-		<a (click)='onClickLogin()'><span>登录</span></a>
-	</li>
-	<li>
-		<a (click)='onClickRegister()'><span>注册</span></a>
-	</li>
-	<li>
-		<a (click)='onClickMessages()'><span>消息通知</span></a>
-	</li>
-	<li>
-		<a><span class='shopping'>购物车 (0)</span></a>
-	</li>
-</ul>
+<div class='container fixedWidthContainer'>
+	<ul>
+		<!--外站-->
+		<li *ngFor='let website of websites'>
+			<a [needRouterLink]='website.isAppSite' appARouterLink href='{{website.url}}' target='_blank'>
+				<span>{{website.title}}</span>
+			</a>
+		</li>
+		<!--选择国家-->
+		<li>
+			<a (click)='onClickLocation()'><span>Select Location</span></a>
+		</li>
+	</ul>
+	<!--账号相关-->
+	<ul>
+		<li><a (click)='onClickLogin()'><span>登录</span></a></li>
+		<li><a (click)='onClickRegister()'><span>注册</span></a></li>
+		<li><a (click)='onClickMessages()'><span>消息通知</span></a></li>
+		<li><a><span class='shopping'>购物车 (0)</span></a></li>
+	</ul>
+</div>
