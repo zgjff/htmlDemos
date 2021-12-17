@@ -1,25 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
-	margin: 0;
-	padding: 0;
-}
 
 html {
 	font-size: 62.5%
 }
 
-body {
-	background-color: white;
-	font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-	font-size: 1.6rem;
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-.fixedWidthContainer {
-	width: 1226px;
+body {
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
+	font-size: 1.6rem;
 }
 
 a {
 	cursor: pointer;
+}
+
+.fixedWidthContainer {
+	width: 1226px;
 }
 
 @media (prefers-color-scheme: dark) {

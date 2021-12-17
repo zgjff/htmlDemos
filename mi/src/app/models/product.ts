@@ -19,3 +19,14 @@ export interface Product {
 	 */
 	price: string
 }
+
+export interface Products {
+	/**
+	 * 产品类型
+	 */
+	type: string
+	/**
+	 * 类型下面的列表
+	 */
+	list: Product[]
+}
