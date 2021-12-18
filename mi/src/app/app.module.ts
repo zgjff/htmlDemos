@@ -14,10 +14,15 @@ import { TabBarComponent } from './components/tab-bar/tab-bar.component'
 import { ARouterLinkModule } from './directives/a-router-link/a-router-link.module'
 import { MatIconModule } from '@angular/material/icon'
 import { MatAutocompleteModule } from '@angular/material/autocomplete'
-import { MatMenuModule } from '@angular/material/menu'
+import { OverlayProductsComponent } from './components/overlay-products/overlay-products.component'
 
 @NgModule({
-	declarations: [AppComponent, SiteWideNavigationBarComponent, TabBarComponent],
+	declarations: [
+		AppComponent,
+		SiteWideNavigationBarComponent,
+		TabBarComponent,
+		OverlayProductsComponent
+	],
 	imports: [
 		ShareModule,
 		BrowserModule,
@@ -30,8 +35,7 @@ import { MatMenuModule } from '@angular/material/menu'
 		ServicesModule,
 		ARouterLinkModule,
 		MatIconModule,
-		MatAutocompleteModule,
-		MatMenuModule
+		MatAutocompleteModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

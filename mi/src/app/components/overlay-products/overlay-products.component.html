@@ -1,0 +1,7 @@
+<ul class='fixedWidthContainer'>
+	<li *ngFor='let product of products'>
+		<img [attr.src]='product.img'>
+		<p class='title'>{{product.title}}</p>
+		<p class='price'>{{product.price}}元起</p>
+	</li>
+</ul>

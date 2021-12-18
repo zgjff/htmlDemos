@@ -1,9 +1,9 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core'
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core'
 import { LoadMockDataService } from '../../services/api-services/load-mock-data.service'
 import { interval, Observable, Subscription } from 'rxjs'
 import { FormControl } from '@angular/forms'
-import { Products } from '../../models/product'
-import { MatMenuTrigger } from '@angular/material/menu'
+import { Product, Products } from '../../models/product'
+import { OverlayProductsService } from '../overlay-products/overlay-products.service'
 
 @Component({
 	selector: 'app-tab-bar',
@@ -19,9 +19,7 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 推荐产品列表
 	 */
 	products: Products[] = []
-
-	@ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger
-
+	@ViewChild('containerBox') elementRef!: ElementRef
 	/**
 	 * 搜索边框颜色
 	 */
@@ -39,6 +37,7 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 热搜
 	 */
 	hotSearch: string[] = []
+
 	/**
 	 * 输入框是否是正在激活
 	 * @private
@@ -50,7 +49,10 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 */
 	private subscription?: Subscription
 
-	constructor(private mockDataService: LoadMockDataService) {}
+	constructor(
+		private mockDataService: LoadMockDataService,
+		private overlayProductsService: OverlayProductsService
+	) {}
 
 	ngOnInit() {
 		this.loadProducts()
@@ -62,6 +64,12 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	}
 
 	/*********************推荐产品列表相关*********************/
+	/**
+	 * 鼠标悬停
+	 */
+	productOnMouseover(products: Product[]) {
+		this.overlayProductsService.show(products, this.elementRef.nativeElement)
+	}
 
 	/*********************搜索框相关*********************/
 

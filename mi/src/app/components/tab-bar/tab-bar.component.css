@@ -102,3 +102,12 @@ mat-option {
 		background-color: white;
 	}
 }
+
+
+.example-list {
+	background: cyan;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}

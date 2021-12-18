@@ -1,55 +1,45 @@
-<div class='container fixedWidthContainer'>
-	<!--logo-->
-	<a>
-		<img alt='logo' class='logo' src='assets/images/logo-mi2.png'>
-	</a>
-	<ul [matMenuTriggerFor]='menu'>
-		<li *ngFor='let product of products'>
-			{{product.type}}
-		</li>
-		<li>服务</li>
-		<li>社区</li>
-	</ul>
-	<!--搜索框-->
-	<div
-		(mouseleave)='searchBoxOnMouseLeave()'
-		(mouseover)='searchBoxOnMouseover()'
-		class='searchBox'
-	>
-		<input
-			(blur)='searchInputUnFocus()'
-			(focus)='searchInputOnFocus()'
-			[attr.placeholder]='searchPlaceholder'
-			[formControl]='searchContent'
-			[matAutocomplete]='searchAuto'
-			[style.border-color]='searchBorderColor'
-			type='search'
+<div #containerBox>
+	<div class='container fixedWidthContainer'>
+		<!--logo-->
+		<a>
+			<img alt='logo' class='logo' src='assets/images/logo-mi2.png'>
+		</a>
+		<ul>
+			<li
+				(mouseover)='productOnMouseover(product.list)'
+				*ngFor='let product of products'
+			>
+				{{product.type}}
+			</li>
+			<li (mouseover)='productOnMouseover([])'>服务</li>
+			<li (mouseover)='productOnMouseover([])'>社区</li>
+		</ul>
+		<!--搜索框-->
+		<div
+			(mouseleave)='searchBoxOnMouseLeave()'
+			(mouseover)='searchBoxOnMouseover()'
+			class='searchBox'
 		>
-		<button
-			(click)='startSearch()'
-			[style.border-color]='searchBorderColor'
-			class='search'
-			type='button'
-		>
-			<mat-icon>search</mat-icon>
-		</button>
+			<input
+				(blur)='searchInputUnFocus()'
+				(focus)='searchInputOnFocus()'
+				[attr.placeholder]='searchPlaceholder'
+				[formControl]='searchContent'
+				[matAutocomplete]='searchAuto'
+				[style.border-color]='searchBorderColor'
+				type='search'
+			>
+			<button
+				(click)='startSearch()'
+				[style.border-color]='searchBorderColor'
+				class='search'
+				type='button'
+			>
+				<mat-icon>search</mat-icon>
+			</button>
+		</div>
 	</div>
 </div>
-
-<mat-menu #menu='matMenu'>
-	<button mat-menu-item>
-		<mat-icon>dialpad</mat-icon>
-		<span>Redial</span>
-	</button>
-	<button disabled mat-menu-item>
-		<mat-icon>voicemail</mat-icon>
-		<span>Check voice mail</span>
-	</button>
-	<button mat-menu-item>
-		<mat-icon>notifications_off</mat-icon>
-		<span>Disable alerts</span>
-	</button>
-</mat-menu>
 
 <!--搜索框自动完成内容-->
 <mat-autocomplete #searchAuto='matAutocomplete' (optionSelected)='autocompleteOptionSelected()'>
