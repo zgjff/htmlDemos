@@ -4,11 +4,13 @@ import { interval, Observable, Subscription } from 'rxjs'
 import { FormControl } from '@angular/forms'
 import { Product, Products } from '../../models/product'
 import { OverlayProductsService } from '../overlay-products/overlay-products.service'
+import { MatAutocompleteTrigger } from '@angular/material/autocomplete'
 
 @Component({
 	selector: 'app-tab-bar',
 	templateUrl: './tab-bar.component.html',
-	styleUrls: ['./tab-bar.component.css']
+	styleUrls: ['./tab-bar.component.css'],
+	animations: []
 })
 
 /**
@@ -19,7 +21,18 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 推荐产品列表
 	 */
 	products: Products[] = []
+	/**
+	 * 整个div容器
+	 */
 	@ViewChild('containerBox') elementRef!: ElementRef
+	/**
+	 * input节点的引用
+	 */
+	@ViewChild('searchBox') searchRef!: ElementRef<HTMLInputElement>
+	/**
+	 * input的自动完成引用
+	 */
+	@ViewChild(MatAutocompleteTrigger) inputTrigger!: MatAutocompleteTrigger
 	/**
 	 * 搜索边框颜色
 	 */
@@ -28,7 +41,6 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 搜索框的placeholder
 	 */
 	searchPlaceholder = ''
-
 	/**
 	 * 搜索框内容
 	 */
@@ -37,7 +49,6 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 热搜
 	 */
 	hotSearch: string[] = []
-
 	/**
 	 * 输入框是否是正在激活
 	 * @private
@@ -68,7 +79,19 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	 * 鼠标悬停
 	 */
 	productOnMouseover(products: Product[]) {
+		if (products.length > 0) {
+			// 输入框失去焦点
+			this.searchRef.nativeElement.blur()
+			this.inputTrigger.closePanel()
+		}
 		this.overlayProductsService.show(products, this.elementRef.nativeElement)
+	}
+
+	/**
+	 * 鼠标移走
+	 */
+	productOnMouseleave() {
+		this.overlayProductsService.markNeedHide(true)
 	}
 
 	/*********************搜索框相关*********************/
@@ -102,7 +125,7 @@ export class TabBarComponent implements OnInit, OnDestroy {
 	/**
 	 * 输入框失去焦点
 	 */
-	searchInputUnFocus() {
+	searchInputOnBlur() {
 		this.inputIsFocus = false
 		this.searchBorderColor = '#dddddd'
 	}

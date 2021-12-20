@@ -1,7 +1,10 @@
 import { Component, HostListener, Inject, OnDestroy, Optional } from '@angular/core'
 import { Product } from '../../models/product'
-import { OVERLAY_PRODUCTS_DATA_TOKEN, OVERLAY_PRODUCTS_REF_TOKEN } from './overlay-products.service'
-import { OverlayRef } from '@angular/cdk/overlay'
+import {
+	OVERLAY_PRODUCTS_DATA_TOKEN,
+	OVERLAY_PRODUCTS_Service_TOKEN,
+	OverlayProductsService
+} from './overlay-products.service'
 
 @Component({
 	selector: 'app-overlay-products',
@@ -17,10 +20,11 @@ export class OverlayProductsComponent implements OnDestroy {
 
 	constructor(
 		@Optional() @Inject(OVERLAY_PRODUCTS_DATA_TOKEN) readonly data: Product[],
-		@Optional() @Inject(OVERLAY_PRODUCTS_REF_TOKEN) readonly ref: OverlayRef
+		@Optional()
+		@Inject(OVERLAY_PRODUCTS_Service_TOKEN)
+		readonly overlayService: OverlayProductsService
 	) {
 		this.products = data
-		console.log(this.products)
 	}
 
 	ngOnDestroy() {
@@ -36,11 +40,20 @@ export class OverlayProductsComponent implements OnDestroy {
 	}
 
 	/**
+	 * 监听鼠标移入事件
+	 * @param event 鼠标移走事件
+	 */
+	@HostListener('mouseover', ['$event'])
+	private onMouseover(event: MouseEvent) {
+		this.overlayService.markNeedHide(false)
+	}
+
+	/**
 	 * 监听鼠标移走事件
 	 * @param event 鼠标移走事件
 	 */
 	@HostListener('mouseleave', ['$event'])
 	private onMousemove(event: MouseEvent) {
-		this.ref.dispose()
+		this.overlayService.markNeedHide(true)
 	}
 }

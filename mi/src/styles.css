@@ -22,15 +22,3 @@ a {
 .fixedWidthContainer {
 	width: 1226px;
 }
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: black;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		background-color: white;
-	}
-}

@@ -1,7 +1,11 @@
 <ul class='fixedWidthContainer'>
 	<li *ngFor='let product of products'>
-		<img [attr.src]='product.img'>
-		<p class='title'>{{product.title}}</p>
-		<p class='price'>{{product.price}}元起</p>
+		<a [attr.href]='product.link' target='_blank'>
+			<div class='imageContent'>
+				<img [attr.alt]='product.title' [attr.src]='product.img'>
+			</div>
+			<p class='title'>{{product.title}}</p>
+			<p class='price'>{{product.price}}元起</p>
+		</a>
 	</li>
 </ul>

@@ -11,6 +11,10 @@ export interface Product {
 	 */
 	desc?: string
 	/**
+	 * 产品链接
+	 */
+	link: string
+	/**
 	 * 图片地址
 	 */
 	img: string

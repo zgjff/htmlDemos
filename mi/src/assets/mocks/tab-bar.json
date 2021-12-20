@@ -4,31 +4,37 @@
 	"list": [
 	  {
 		"title": "Xiaomi 11 青春活力版",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1999"
 	  },
 	  {
 		"title": "Xiaomi Civi",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "2599"
 	  },
 	  {
 		"title": "Xiaomi 11 MIX4",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "4199"
 	  },
 	  {
 		"title": "Xiaomi 11 MIX FOLD",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "7999"
 	  },
 	  {
 		"title": "Xiaomi 11 Ultra",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "5499"
 	  },
 	  {
 		"title": "Xiaomi 11 Pro",
+		"link": "https://www.mi.com/mi11le-5g-ne",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fea69fb5990da9dfc909aa8279aaea7e.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "3999"
 	  }
@@ -39,31 +45,37 @@
 	"list": [
 	  {
 		"title": "Redmi Note 11 Pro系列",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1799"
 	  },
 	  {
 		"title": "Redmi Note 11 5G",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1199"
 	  },
 	  {
 		"title": "Redmi Note 11 4G",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "999"
 	  },
 	  {
 		"title": "Redmi Note 10 Pro",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1499"
 	  },
 	  {
 		"title": "Redmi Note 10 5G",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1099"
 	  },
 	  {
 		"title": "K40 游戏增强版",
+		"link": "https://www.mi.com/redminote11pro",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7e78629420a392da6fd3e34dae9fac5d.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1999"
 	  }
@@ -74,31 +86,37 @@
 	"list": [
 	  {
 		"title": "Redmi智能电视X55 2022",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "2699"
 	  },
 	  {
 		"title": "Redmi智能电视X65 2022",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "3499"
 	  },
 	  {
 		"title": "小米电视6 65 OLED",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "6999"
 	  },
 	  {
 		"title": "小米电视 大师 77 OLED",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "17999"
 	  },
 	  {
 		"title": "小米透明电视",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "39999"
 	  },
 	  {
 		"title": "小米电视 大师 65英寸OLED",
+		"link": "https://www.mi.com/buy/detail?product_id=15100",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "8999"
 	  }
@@ -109,31 +127,37 @@
 	"list": [
 	  {
 		"title": "小米笔记本 Pro14 锐龙版",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "5499"
 	  },
 	  {
 		"title": "RedmiBook Pro15 增强版",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "5299"
 	  },
 	  {
 		"title": "小米笔记本Pro X14",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "7999"
 	  },
 	  {
 		"title": "Redmi G 2021 Intel版",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "6499"
 	  },
 	  {
 		"title": "Redmi G 2021 Intel版",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "7999"
 	  },
 	  {
 		"title": "小米笔记本Pro X15",
+		"link": "https://www.mi.com/buy/detail?product_id=10000361",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271ca8f503f72cfe33d282c74a499ebf.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "7999"
 	  }
@@ -144,11 +168,13 @@
 	"list": [
 	  {
 		"title": "小米平板5",
+		"link": "https://www.mi.com/xiaomipad5",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33de34a4caf2834a1828dc51203dc922.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1999"
 	  },
 	  {
 		"title": "小米平板5 PrO",
+		"link": "https://www.mi.com/xiaomipad5",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33de34a4caf2834a1828dc51203dc922.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "2499"
 	  }
@@ -159,26 +185,31 @@
 	"list": [
 	  {
 		"title": "米家风冷对开门冰箱483L",
+		"link": "https://www.mi.com/buy/detail?product_id=10952",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "2399"
 	  },
 	  {
 		"title": "米家扫拖机器人1T",
+		"link": "https://www.mi.com/buy/detail?product_id=10952",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1999"
 	  },
 	  {
 		"title": "米家互联网洗烘一体机10kg",
+		"link": "https://www.mi.com/buy/detail?product_id=10952",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1899"
 	  },
 	  {
 		"title": "小米净水器S1 800G",
+		"link": "https://www.mi.com/buy/detail?product_id=10952",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "2199"
 	  },
 	  {
 		"title": "Redmi全自动波轮洗衣机1A",
+		"link": "https://www.mi.com/buy/detail?product_id=10952",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "799"
 	  }
@@ -189,31 +220,37 @@
 	"list": [
 	  {
 		"title": "小米路由器AX6000",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "599"
 	  },
 	  {
 		"title": "小米路由器AX9000",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "1299"
 	  },
 	  {
 		"title": "Redmi路由器AC2100",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "169"
 	  },
 	  {
 		"title": "小米路由器 Mesh",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "999"
 	  },
 	  {
 		"title": "小米路由器4A 千兆版",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "129"
 	  },
 	  {
 		"title": "小米路由器 4C",
+		"link": "https://www.mi.com/r6000",
 		"img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a759fa795d749f0538cfd2a15890027.png?thumb=1&w=320&h=220&f=webp&q=90",
 		"price": "59"
 	  }

@@ -37,10 +37,6 @@ li {
 	padding: 0 12px;
 }
 
-li:nth-last-child(1), li:nth-last-child(2) {
-	align-self: center;
-}
-
 li:hover {
 	color: #ff6700;
 }
@@ -60,10 +56,6 @@ input {
 	outline: none;
 	padding: 0 10px;
 	width: 230px;
-}
-
-input::-webkit-search-cancel-button {
-	display: none;
 }
 
 button.search {
@@ -88,19 +80,6 @@ input, button {
 mat-option {
 	font-size: 1rem;
 	height: 30px;
-}
-
-/*********************暗黑适配*********************/
-@media (prefers-color-scheme: dark) {
-	:host {
-		background-color: white;
-	}
-}
-
-@media (prefers-color-scheme: light) {
-	:host {
-		background-color: white;
-	}
 }
 
 
